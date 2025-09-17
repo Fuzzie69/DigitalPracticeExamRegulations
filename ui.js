@@ -156,6 +156,10 @@ export function renderResults(percentage, correct, total, resultsData) {
             resultHTML += `<p class="user-answer incorrect-text">Your answer: ${result.userAnswer}</p>`;
             resultHTML += `<p class="correct-answer">Correct answer: ${result.correctAnswer}</p>`;
         }
+        // Add reference if available
+        if (result.reference) {
+            resultHTML += `<p class="reference"><em>Reference: ${result.reference}</em></p>`;
+        }
         resultItem.innerHTML = resultHTML;
         resultsDetails.appendChild(resultItem);
     });

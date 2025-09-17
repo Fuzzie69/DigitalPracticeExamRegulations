@@ -1,2174 +1,1983 @@
 [
-  {
-    "question": "What is the minimum cross-sectional area of a copper main Earth conductor for a domestic installation 16mm² size active?",
-    "options": [
-      "6mm²",
-      "10mm²",
-      "16mm²",
-      "25mm²"
-    ],
-    "answer": "10mm²"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is the maximum permitted earth fault loop impedance (Zs) for a 32A Type B circuit breaker protecting a circuit?",
-    "options": [
-      "0.44Ω",
-      "0.72Ω",
-      "1.15Ω",
-      "1.44Ω"
-    ],
-    "answer": "1.15Ω"
-  },
-  {
-    "question": "Which of the following is NOT a recognized method of basic protection against electric shock under normal conditions?",
-    "options": [
-      "Basic Insulation",
-      "Barriers or Enclosures",
-      "Placing out of reach",
-      "Using a Residual Current Device (RCD)"
-    ],
-    "answer": "Using a Residual Current Device (RCD)"
-  },
-  {
-    "question": "In a TT earthing system, the installation's connection to earth is provided by:",
-    "options": [
-      "The supply transformer's earth",
-      "A local earth electrode at the installation",
-      "The metallic sheath of the supply cable",
-      "The neutral conductor"
-    ],
-    "answer": "A local earth electrode at the installation"
-  },
-  {
-    "question": "What is the maximum permitted voltage drop for a lighting circuit in a low-voltage installation?",
-    "options": [
-      "2%",
-      "3%",
-      "4%",
-      "5%"
-    ],
-    "answer": "5%"
-  },
-  {
-    "question": "A 30mA RCD must trip within what time at its rated residual current (I∆n)?",
-    "options": [
-      "40ms",
-      "150ms",
-      "200ms",
-      "300ms"
-    ],
-    "answer": "300ms"
-  },
-  {
-    "question": "Which IP rating would be most suitable for a socket outlet installed in zone 2 of a bathroom?",
-    "options": [
-      "IPX0",
-      "IPX2",
-      "IPX4",
-      "IPX7"
-    ],
-    "answer": "IPX4"
-  },
-  {
-    "question": "What does the term 'SELV' stand for in electrical regulations?",
-    "options": [
-      "Standard Extra-Low Voltage",
-      "Saturated Earth Low Voltage",
-      "Separated Extra-Low Voltage",
-      "Systematic Electrical Low Voltage"
-    ],
-    "answer": "Separated Extra-Low Voltage"
-  },
-  {
-    "question": "What colour must be used to identify a protective conductor (earth wire)?",
-    "options": [
-      "Brown",
-      "Blue",
-      "Green-and-yellow",
-      "Grey"
-    ],
-    "answer": "Green-and-yellow"
-  },
-  {
-    "question": "An electrical certificate of compliance must be provided for which of the following?",
-    "options": [
-      "Replacing a socket outlet like-for-like",
-      "Replacing a damaged switch",
-      "A new circuit installation",
-      "Replacing a light fitting"
-    ],
-    "answer": "A new circuit installation"
-  },
-  {
-    "question": "What is the purpose of equipotential bonding?",
-    "options": [
-      "To limit the magnitude of fault current",
-      "To reduce the risk of fire",
-      "To prevent a dangerous potential difference between extraneous-conductive-parts",
-      "To improve the power factor of the installation"
-    ],
-    "answer": "To prevent a dangerous potential difference between extraneous-conductive-parts"
-  },
-  {
-    "question": "For a standard final sub-circuit, protected by a 32A device, what is the minimum cable size?",
-    "options": [
-      "1.5mm²",
-      "2.5mm²",
-      "4.0mm²",
-      "6.0mm²"
-    ],
-    "answer": "4.0mm²"
-  },
-  {
-    "question": "What is the primary function of a circuit breaker?",
-    "options": [
-      "To regulate voltage",
-      "To provide overcurrent protection",
-      "To correct power factor",
-      "To prevent electric shock"
-    ],
-    "answer": "To provide overcurrent protection"
-  },
-  {
-    "question": "What is the primary purpose of an RCD?",
-    "options": [
-      "Overcurrent protection",
-      "Short circuit protection",
-      "Additional protection for electric shock",
-      "Voltage regulation"
-    ],
-    "answer": "Additional protection for electric shock"
-  },
-  {
-    "question": "In a TN-C-S system, the 'C-S' stands for:",
-    "options": [
-      "Combined-Separate",
-      "Concentric-Split",
-      "Combined-System",
-      "Circuit-Separate"
-    ],
-    "answer": "Combined-Separate"
-  },
-  {
-    "question": "What is the maximum disconnection time for a final sub-circuit supplying sockets up to 63A?",
-    "options": [
-      "0.2s",
-      "0.4s",
-      "1s",
-      "5s"
-    ],
-    "answer": "0.4s"
-  },
-  {
-    "question": "What is the standard appliance wire colour for a phase conductor in a single phase AC circuit?",
-    "options": [
-      "Red",
-      "Yellow",
-      "Blue",
-      "Brown"
-    ],
-    "answer": "Brown"
-  },
-  {
-    "question": "What is the IP rating for equipment that is protected against dust ingress and low-pressure water jets?",
-    "options": [
-      "IP54",
-      "IP65",
-      "IP67",
-      "IP44"
-    ],
-    "answer": "IP65"
-  },
-  {
-    "question": "What is the minimum depth of cover for a cable buried within the confines of a building in a Cat B system?",
-    "options": [
-      "300mm",
-      "450mm",
-      "500mm",
-      "600mm"
-    ],
-    "answer": "500mm"
-  },
-  {
-    "question": "The 'Prospective Fault Current' (PFC) is the highest current that can flow under:",
-    "options": [
-      "Overload conditions",
-      "Short-circuit conditions",
-      "Earth leakage conditions",
-      "Normal operating conditions"
-    ],
-    "answer": "Short-circuit conditions"
-  },
-  {
-    "question": "Which type of circuit breaker is most suitable for a circuit with high inrush currents, like a motor?",
-    "options": [
-      "Type B",
-      "Type C",
-      "Type D",
-      "Type A"
-    ],
-    "answer": "Type D"
-  },
-  {
-    "question": "What is the purpose of the ' adiabatic equation'?",
-    "options": [
-      "To calculate voltage drop",
-      "To verify the thermal constraints of a conductor under fault conditions",
-      "To determine the size of a main bonding conductor",
-      "To calculate the required RCD rating"
-    ],
-    "answer": "To verify the thermal constraints of a conductor under fault conditions"
-  },
-  {
-    "question": "What does 'ADS' stand for in the context of protection against electric shock?",
-    "options": [
-      "Automatic Disconnection of Supply",
-      "Additional Disconnection System",
-      "Automatic Detection of Supply",
-      "Active Disconnection of Supply"
-    ],
-    "answer": "Automatic Disconnection of Supply"
-  },
-  {
-    "question": "For a domestic lighting circuit, what is the most common rating for a protective device?",
-    "options": [
-      "3A",
-      "6A",
-      "10A",
-      "16A"
-    ],
-    "answer": "6A"
-  },
-  {
-    "question": "Which of the following is a requirement for socket outlets in a new domestic installation?",
-    "options": [
-      "Must be secondary switched",
-      "Must have RCD protection",
-      "Must be on a ring circuit",
-      "Must be metal-clad"
-    ],
-    "answer": "Must have RCD protection"
-  },
-  {
-    "question": "What is the minimum cross-sectional area for a circuit protective conductor that is not part of a cable?",
-    "options": [
-      "1.5mm²",
-      "2.5mm²",
-      "4.0mm²",
-      "6.0mm²"
-    ],
-    "answer": "2.5mm²"
-  },
-  {
-    "question": "What zone in a location containing a bath or shower requires other electrical equipment to be at least IPX7?",
-    "options": [
-      "Zone 0",
-      "Zone 1",
-      "Zone 2",
-      "Outside the zones"
-    ],
-    "answer": "Zone 0"
-  },
-  {
-    "question": "An Electrical Safety Certificate can be issued for:",
-    "options": [
-      "A new circuit",
-      "A complete rewire",
-      "Maintaining a fitting to return it to it's original condition",
-      "Resetting a MCB"
-    ],
-    "answer": "Maintaining a fitting to return it to it's original condition"
-  },
-  {
-    "question": "Which document provides statutory guidance on electrical safety in the New Zealand?",
-    "options": [
-      "AS/NZS 3001",
-      "The On-Site Guide",
-      "The Electrical Safety Regulations 2010",
-      "The Building Regulations Schedule 2"
-    ],
-    "answer": "The Electrical Safety Regulations 2010"
-  },
-  {
-    "question": "What is the maximum permitted Zs for a 20A Type C circuit breaker?",
-    "options": [
-      "2.30Ω",
-      "1.53Ω",
-      "0.57Ω",
-      "0.87Ω"
-    ],
-    "answer": "1.53Ω"
-  },
-  {
-    "question": "The continuity of protective conductors is tested using which instrument?",
-    "options": [
-      "Insulation Resistance Tester",
-      "Loop Impedance Tester",
-      "Low Resistance Ohmmeter",
-      "RCD Tester"
-    ],
-    "answer": "Low Resistance Ohmmeter"
-  },
-  {
-    "question": "What is the minimum insulation resistance value for a 230V circuit without MIMS conductors?",
-    "options": [
-      "0.5 MΩ",
-      "1.0 MΩ",
-      "2.0 MΩ",
-      "10.0 MΩ"
-    ],
-    "answer": "1.0 MΩ"
-  },
-  {
-    "question": "What colour indicates the neutral conductor in a domestic single-phase circuit?",
-    "options": [
-      "Black",
-      "Grey",
-      "Blue",
-      "Brown"
-    ],
-    "answer": "Black"
-  },
-  {
-    "question": "What is the purpose of supplementary bonding?",
-    "options": [
-      "To connect all extraneous-conductive-parts mechanically",
-      "To reduce earth fault-loop impedance by equipotential bonding",
-      "To increase the size of the main earth",
-      "It is no longer a requirement in most cases"
-    ],
-    "answer": "To reduce earth fault-loop impedance by equipotential bonding"
-  },
-  {
-    "question": "When testing a 30mA RCD, at what fault current should it NOT trip?",
-    "options": [
-      "1 x I∆n",
-      "5 x I∆n",
-      "1/2 x I∆n",
-      "2 x I∆n"
-    ],
-    "answer": "1/2 x I∆n"
-  },
-  {
-    "question": "What is the main characteristic of a TN-C-S earthing system?",
-    "options": [
-      "The neutral and protective conductors are totally separate",
-      "The distribution system is directly connected to earth at the Neutral point of the Transformer",
-      "The installation has its own dedicated isolation transformer",
-      "The earth is provided by the supplier's neutral"
-    ],
-    "answer": "The distribution system is directly connected to earth at the Neutral point of the Transformer"
-  },
-  {
-    "question": "Which of these is NOT a method of fault protection?",
-    "options": [
-      "Double or reinforced insulation",
-      "Automatic Disconnection of Supply",
-      "Electrical Separation",
-      "Basic Insulation"
-    ],
-    "answer": "Basic Insulation"
-  },
-  {
-    "question": "What is the maximum route length of a 1.5mm² TPS cable on a Type C 10A circuit?",
-    "options": [
-      "50m",
-      "82m",
-      "100m",
-      "89m"
-    ],
-    "answer": "82m"
-  },
-  {
-    "question": "What is the purpose of a diversity factor?",
-    "options": [
-      "To account for different ambient temperatures",
-      "To calculate the maximum demand of an installation",
-      "To determine the grouping factor for cables",
-      "To calculate voltage drop"
-    ],
-    "answer": "To calculate the maximum demand of an installation"
-  },
-  {
-    "question": "Which of the following locations would require RCD protection on all general power outlets?",
-    "options": [
-      "A domestic dwelling",
-      "An industrial workshop",
-      "A commercial kitchen",
-      "A commercial office"
-    ],
-    "answer": "A domestic dwelling"
-  },
-  {
-    "question": "Polarity testing ensures that:",
-    "options": [
-      "The earth connection is continuous",
-      "The insulation is sufficient",
-      "Line conductors are connected to fuses/switches and the centre contact of ES lampholders",
-      "The RCD trips correctly"
-    ],
-    "answer": "Line conductors are connected to fuses/switches and the centre contact of ES lampholders"
-  },
-  {
-    "question": "What is the maximum permitted earth fault loop impedance for a 16A Type B circuit breaker?",
-    "options": [
-      "1.44Ω",
-      "2.87Ω",
-      "3.59Ω",
-      "0.72Ω"
-    ],
-    "answer": "3.59Ω"
-  },
-  {
-    "question": "PELV stands for:",
-    "options": [
-      "Protected Extra-Low Voltage",
-      "Powered Extra-Low Voltage",
-      "Primary Earth Low Voltage",
-      "Potential Equalisation Low Voltage"
-    ],
-    "answer": "Protected Extra-Low Voltage"
-  },
-  {
-    "question": "A 'Type AC' RCD is designed to operate on:",
-    "options": [
-      "Alternating currents only",
-      "Pulsating DC currents only",
-      "Both AC and pulsating DC currents",
-      "Smooth DC currents"
-    ],
-    "answer": "Alternating currents only"
-  },
-  {
-    "question": "What test is performed to verify the integrity of insulation between live conductors and earth?",
-    "options": [
-      "Continuity of Protective Earth Test",
-      "Insulation Resistance Test",
-      "Earth Loop Impedance Test",
-      "Polarity Test"
-    ],
-    "answer": "Insulation Resistance Test"
-  },
-  {
-    "question": "What is the minimum separation distance between a gas pipe and an electrical cable?",
-    "options": [
-      "25mm",
-      "50mm",
-      "100mm",
-      "160mm"
-    ],
-    "answer": "25mm"
-  },
-  {
-    "question": "What is the maximum permitted earth fault-loop impedance for a 6A HRC fuse supplying a final sub-circuit?",
-    "options": [
-      "7.28Ω",
-      "8.74Ω",
-      "11.5Ω",
-      "9.2Ω"
-    ],
-    "answer": "11.5Ω"
-  },
-  {
-    "question": "What is the maximum voltage for a SELV system?",
-    "options": [
-      "25V AC",
-      "50V AC",
-      "110V AC",
-      "130V DC"
-    ],
-    "answer": "50V AC"
-  },
-  {
-    "question": "Which Section of AS/NZS 3000 deals with 'Special Electrical Installations'?",
-    "options": [
-      "Section 4",
-      "Section 5",
-      "Section 6",
-      "Section 7"
-    ],
-    "answer": "Section 7"
-  },
-  {
-    "question": "What is the test voltage for an insulation resistance test on a 230V circuit?",
-    "options": [
-      "230V DC",
-      "250V DC",
-      "500V DC",
-      "1000V DC"
-    ],
-    "answer": "500V DC"
-  },
-  {
-    "question": "What is the meaning of 'IP2X'?",
-    "options": [
-      "Protection against fingers and objects >12.5mm",
-      "Protection against dust",
-      "Protection against dripping water",
-      "Protection against tools and wires >2.5mm"
-    ],
-    "answer": "Protection against fingers and objects >12.5mm"
-  },
-  {
-    "question": "The 'Ze' measurement is the earth fault loop impedance of:",
-    "options": [
-      "The external earth fault loop",
-      "The internal earth fault loop",
-      "The entire circuit",
-      "The appliance"
-    ],
-    "answer": "The external earth fault loop"
-  },
-  {
-    "question": "According to the Electricity (Safety) Regulations 2010, which situation deems low-voltage fittings to be electrically unsafe?",
-    "options": [
-      "Unearthed conductive parts separated from live parts by only basic insulation",
-      "Fittings intended to have a safety function and serving it",
-      "Any fitting with more than 1 MΩ insulation resistance",
-      "Fittings with double insulation rating"
-    ],
-    "answer": "Unearthed conductive parts separated from live parts by only basic insulation"
-  },
-  {
-    "question": "When a trainee completes work in an installation, what are the requirements for signing an electrical safety certificate?",
-    "options": [
-      "Trainee signs only",
-      "Supervisor signs and dates, and provides their registration number",
-      "Inspector signs only",
-      "Any licensed electrical worker signs"
-    ],
-    "answer": "Supervisor signs and dates, and provides their registration number"
-  },
-  {
-    "question": "According to AS/NZS 3000, in what situation may the protection disconnection time be greater than 0.4 s but not exceed 5 s?",
-    "options": [
-      "For final subcircuits ≤ 32 A",
-      "For mains and submains",
-      "For socket outlet circuits in bathrooms",
-      "For RCD-protected circuits"
-    ],
-    "answer": "For mains and submains"
-  },
-  {
-    "question": "According to AS/NZS 3000, every electrical installation shall be divided into circuits as necessary to…",
-    "options": [
-      "Avoid danger and maximize inconvenience in the event of a fault",
-      "Facilitate safe operation, inspection, testing and maintenance",
-      "Reduce energy consumption",
-      "Eliminate the need for circuit protective devices"
-    ],
-    "answer": "Facilitate safe operation, inspection, testing and maintenance"
-  },
-  {
-    "question": "What is a requirement for electrical equipment in damp situations (AS/NZS 3000)?",
-    "options": [
-      "Provide additional protection against electric shock where water or humidity increases risk",
-      "Provide adequate protection against damage from water or humidity",
-      "Be installed only if IP67 rated",
-      "Use SELV supply only"
-    ],
-    "answer": "Provide additional protection against electric shock where water or humidity increases risk"
-  },
-  {
-    "question": "According to AS/NZS 3000, what must be provided where unexpected restarting of a motor could cause danger?",
-    "options": [
-      "An RCD",
-      "A means to prevent automatic restarting after stopping",
-      "A surge protective device",
-      "A secondary motor relay"
-    ],
-    "answer": "A means to prevent automatic restarting after stopping"
-  },
-  {
-    "question": "Which identification requirement applies to equipment on a switchboard (AS/NZS 3000)?",
-    "options": [
-      "All equipment must be legibly identified in English",
-      "Switchboard labels must not be indelible",
-      "Relationship of switches, breakers, and RCDs to installation sections must not be marked",
-      "Bars and links must be colour coded"
-    ],
-    "answer": "All equipment must be legibly identified in English"
-  },
-  {
-    "question": "Which type of pipe may NOT be used as earthing conductors (AS/NZS 3000)?",
-    "options": [
-      "Old pipes",
-      "Gas pipes",
-      "Conduits",
-      "Downpipes"
-    ],
-    "answer": "Gas pipes"
-  },
-  {
-    "question": "Why must precautions be taken when testing a low-voltage electrical installation?",
-    "options": [
-      "To ensure safety of persons",
-      "To ensure damage to property and electrical installation equipment",
-      "To prevent energy wastage",
-      "To comply with AS/NZS 3012"
-    ],
-    "answer": "To ensure safety of persons"
-  },
-  {
-    "question": "What must be verified when alterations or additions are made to an electrical installation (AS/NZS 3000)?",
-    "options": [
-      "They comply with AS/NZS 3000 and do not impair safety",
-      "They improve energy efficiency",
-      "They are tested for RCD compliance only",
-      "They are inspected visually only"
-    ],
-    "answer": "They comply with AS/NZS 3000 and do not impair safety"
-  },
-  {
-    "question": "According to AS/NZS 3000, how must an over-temperature cut-out for an unvented water heater be connected?",
-    "options": [
-      "Directly in the circuit wiring to the heater elements",
-      "Through relays only",
-      "Through contactors only",
-      "It is optional if the heater has a thermostat"
-    ],
-    "answer": "Directly in the circuit wiring to the heater elements"
-  },
-  {
-    "question": "What is a requirement for switching a stationary cooking appliance with open cooking surface (AS/NZS 3000)?",
-    "options": [
-      "Switch in neutral conductor only",
-      "Mounted near and accessible",
-      "Fitted with IP67 protection",
-      "RCD-protected at the socket"
-    ],
-    "answer": "Mounted near and accessible"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is a permitted method of connecting electrical equipment?",
-    "options": [
-      "Direct connection",
-      "Installation coupler",
-      "Socket outlet",
-      "Ceiling rose or permanent connection unit",
-      "All of the above"
-    ],
-    "answer": "All of the above"
-  },
-  {
-    "question": "For a switch controlling two socket outlets, what is a current rating requirement (AS/NZS 3000)?",
-    "options": [
-      "Not less than half the current rating of the socket outlets",
-      "Not less than the current rating of the protective device",
-      "Not less than 32 A always",
-      "Not less than half the MCB rating"
-    ],
-    "answer": "Not less than the current rating of the protective device"
-  },
-  {
-    "question": "What is the minimum insulation resistance for a new LV installation (excluding fixed appliances like water heaters)?",
-    "options": [
-      "0.5 MΩ",
-      "1.0 MΩ",
-      "5.0 MΩ",
-      "10.0 MΩ"
-    ],
-    "answer": "1.0 MΩ"
-  },
-  {
-    "question": "When testing insulation resistance on fixed appliances such as ovens and water heaters, what minimum value must be obtained?",
-    "options": [
-      "1.0 kΩ",
-      "100 kΩ",
-      "1.0 MΩ",
-      "0.01 MΩ"
-    ],
-    "answer": "0.01 MΩ"
-  },
-  {
-    "question": "What is the maximum permitted voltage drop for a low-voltage installation under normal conditions (AS/NZS 3000)?",
-    "options": [
-      "4%",
-      "5%",
-      "7%",
-      "10%"
-    ],
-    "answer": "5%"
-  },
-  {
-    "question": "According to the Electricity Act 1992, under what circumstances can an installation be connected to supply before testing and certification?",
-    "options": [
-      "Where the connection is solely for carrying out testing, inspection, or certification required by regulations",
-      "Where the consumer requests early connection",
-      "If the client approves verbally",
-      "Any time before the Certificate of Compliance is issued"
-    ],
-    "answer": "Where the connection is solely for carrying out testing, inspection, or certification required by regulations"
-  },
-  {
-    "question": "What is one category of people whom the Electrical Workers Registration Board require to undertake a competence programme?",
-    "options": [
-      "Applicants for practising or provisional licences",
-      "All low-risk electrical workers",
-      "Registered inspectors only",
-      "Electricity distributors only"
-    ],
-    "answer": "Applicants for practising or provisional licences"
-  },
-  {
-    "question": "How must a line function service provider protect a consumer’s installation against fault currents?",
-    "options": [
-      "Provide a service protective fitting of appropriate rating against short-circuits or earth faults on mains",
-      "Ensure the consumer installs their own protective devices",
-      "Install surge protection only",
-      "Test for earth loop impedance"
-    ],
-    "answer": "Provide a service protective fitting of appropriate rating against short-circuits or earth faults on mains"
-  },
-  {
-    "question": "Which type of low-voltage installation below must comply with Part 2 of AS/NZS 3000?",
-    "options": [
-      "Domestic installations with demand ≤ 80A per phase single-phase",
-      "Any commercial aircraft",
-      "Industrial plant Only",
-      "Street lighting only"
-    ],
-    "answer": "Domestic installations with demand ≤ 80A per phase single-phase"
-  },
-  {
-    "question": "How must a common neutral in a switchboard be identified (AS/NZS 3000)?",
-    "options": [
-      "By permanent and legible marking to show associated active conductors",
-      "By colour coding only",
-      "By inspector approval",
-      "By using larger cable size"
-    ],
-    "answer": "By permanent and legible marking to show associated active conductors"
-  },
-  {
-    "question": "In what situation may live parts be exposed on an industrial switchboard (AS/NZS 3000)?",
-    "options": [
-      "When basic protection is provided by barriers in accordance with 1.5.4.4",
-      "When the switchboard is installed outdoors",
-      "Only in temporary installations",
-      "Never under any circumstances"
-    ],
-    "answer": "When basic protection is provided by barriers in accordance with 1.5.4.4"
-  },
-  {
-    "question": "Where may a main switchboard be installed in relation to swimming pools (AS/NZS 3000)?",
-    "options": [
-      "Outside or not above any classified zone",
-      "Directly beside the pool",
-      "Directly under sprinklers",
-      "In Zone 0"
-    ],
-    "answer": "Outside or not above any classified zone"
-  },
-  {
-    "question": "What is a circumstance where LV cables can be installed in the same wiring system as ELV cables (AS/NZS 3000)?",
-    "options": [
-      "Where the LV cables are not of a type providing double insulation",
-      "Where all conductors are insulated for the highest voltage present",
-      "Where they are joined in junction boxes",
-      "Only if separated by plastic tape"
-    ],
-    "answer": "Where all conductors are insulated for the highest voltage present"
-  },
-  {
-    "question": "What requirement applies for indicating the position of a buried direct LV neutral-screen cable (AS/NZS 3000)?",
-    "options": [
-      "Labelling on ends of cable",
-      "Record of the cable route on a plan at the switchboard",
-      "Paint the ground above it",
-      "Fit a circuit breaker at both ends"
-    ],
-    "answer": "Record of the cable route on a plan at the switchboard"
-  },
-  {
-    "question": "Where must the ends of a main earthing conductor be connected in a MEN installation (AS/NZS 3000)?",
-    "options": [
-      "Main earth bar and electrode",
-      "To the switchboard neutral only",
-      "To the main protective device",
-      "To the distributor’s transformer"
-    ],
-    "answer": "Main earth bar and electrode"
-  },
-  {
-    "question": "What is the minimum permitted length of a caravan supply lead (AS/NZS 3001)?",
-    "options": [
-      "5 m",
-      "7.5 m",
-      "10 m",
-      "15 m"
-    ],
-    "answer": "10 m"
-  },
-  {
-    "question": "How must earth continuity of socket outlets in a caravan be verified (AS/NZS 3001)?",
-    "options": [
-      "By ensuring effective continuity from the supply lead plug earth pin to each outlet earth pin",
-      "By testing with a neon tester only",
-      "By visual inspection",
-      "Not required if RCD protected"
-    ],
-    "answer": "By ensuring effective continuity from the supply lead plug earth pin to each outlet earth pin"
-  },
-  {
-    "question": "What are the requirements for caravan supply lead plugs (AS/NZS 3001)?",
-    "options": [
-      "Must comply with IEC 60309 (≥15A) or AS/NZS 3112 (≥15A); If AS/NZS 3112, then RCD protection must be provided with no neutral/earth link",
-      "Can be any household plug",
-      "Must always be 32 A rated",
-      "Not regulated"
-    ],
-    "answer": "Must comply with IEC 60309 (≥15A) or AS/NZS 3112 (≥15A); If AS/NZS 3112, then RCD protection must be provided with no neutral/earth link"
-  },
-  {
-    "question": "What is one requirement that applies when issuing a warrant of electrical fitness (ESR)?",
-    "options": [
-      "Issued in accordance with AS/NZS 3001",
-      "Written on white parchment",
-      "Copy kept for 10 years",
-      "Sticker affixed on chassis",
-      "Only Electrician signs off"
-    ],
-    "answer": "Issued in accordance with AS/NZS 3001"
-  },
-  {
-    "question": "What is an installation method that protects lamp holders against inadvertent contact (AS/NZS 3000)?",
-    "options": [
-      "Installed ≥1.8 m above ground/floor",
-      "Provision of suitable ground wire",
-      "Always IP67",
-      "Installed with RCD"
-    ],
-    "answer": "Installed ≥1.8 m above ground/floor"
-  },
-  {
-    "question": "How must the neutral conductor be connected in an Edison screw lampholder (AS/NZS 3000)?",
-    "options": [
-      "Neutral to outer contact",
-      "Neutral to centre pin",
-      "Neutral not required",
-      "Either terminal is acceptable"
-    ],
-    "answer": "Neutral to outer contact"
-  },
-  {
-    "question": "What are the TWO risks recessed luminaires must be installed to prevent (AS/NZS 3000)?",
-    "options": [
-      "Excessive temperature rise",
-      "Fire from ignition of combustible materials",
-      "Water ingress",
-      "Incorrect polarity"
-    ],
-    "answer": "Excessive temperature rise; Fire from ignition of combustible materials"
-  },
-  {
-    "question": "What is the minimum size of aluminium aerial conductor and strand requirement (AS/NZS 3000)?",
-    "options": [
-      "7 strands, 16 mm²",
-      "19 strands, 25 mm²",
-      "7 strands, 10 mm²",
-      "16 strands, 25 mm²"
-    ],
-    "answer": "7 strands, 16 mm²"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is a required characteristic of short-circuit protective devices?",
-    "options": [
-      "Breaking capacity ≥ prospective short-circuit current at point of installation",
-      "Must interrupt fault current after conductors exceed permissible temperature",
-      "Provide earth leakage protection",
-      "Must always be RCD type"
-    ],
-    "answer": "Breaking capacity ≥ prospective short-circuit current at point of installation"
-  },
-  {
-    "question": "What is the maximum disconnection time permitted for a gG HRC fuse on a sub-main if an earth fault of negligible impedance occurs (AS/NZS 3000)?",
-    "options": [
-      "0.4 s",
-      "1.0 s",
-      "5.0 s",
-      "10.0 s"
-    ],
-    "answer": "5.0 s"
-  },
-  {
-    "question": "According to AS/NZS 3000, pick one situation where RCD protection must be provided in a new domestic electrical installation?",
-    "options": [
-      "Socket-outlet final subcircuits",
-      "Installtion mains wiring",
-      "Directly connected Hot water cylinder",
-      "Distribution submains"
-    ],
-    "answer": "Socket-outlet final subcircuits"
-  },
-  {
-    "question": "Under what circumstances may a main switchboard be installed in a location exposed to water splashing or steam (AS/NZS 3000)?",
-    "options": [
-      "Only when installed outdoors",
-      "If provided with a suitable enclosure or in a cupboard with close-fitting doors",
-      "Never permitted",
-      "Only with inspector's approval"
-    ],
-    "answer": "If provided with a suitable enclosure or in a cupboard with close-fitting doors"
-  },
-  {
-    "question": "What is the minimum degree of protection required for a main switchboard installed in a sanitisation or hosing-down area (AS/NZS 3000)?",
-    "options": [
-      "IPX4",
-      "IPX5",
-      "IPX6",
-      "IPX7"
-    ],
-    "answer": "IPX6"
-  },
-  {
-    "question": "What is the minimum voltage permitted at the terminals of a single-phase hot water cylinder 12 m from the switchboard, supplied at 230 V (AS/NZS 3000)?",
-    "options": [
-      "218.5 V",
-      "220 V",
-      "225 V",
-      "230 V"
-    ],
-    "answer": "218.5 V"
-  },
-  {
-    "question": "Which installation category may be used for underground burial of a 25 mm² twin-and-earth cable (AS/NZS 3000 Table 3.5)?",
-    "options": [
-      "Category A, Category B, Category C",
-      "Category B, Category C",
-      "Category C",
-      "Category D"
-    ],
-    "answer": "Category A, Category B, Category C"
-  },
-  {
-    "question": "What is the minimum burial depth for a Category B installation without concrete cover (AS/NZS 3000)?",
-    "options": [
-      "300 mm",
-      "375 mm",
-      "500 mm",
-      "575 mm"
-    ],
-    "answer": "500 mm"
-  },
-  {
-    "question": "What is the minimum burial depth for a Category B installation with 90 mm concrete cover (AS/NZS 3000)?",
-    "options": [
-      "300 mm",
-      "375 mm",
-      "500 mm",
-      "575 mm"
-    ],
-    "answer": "300 mm"
-  },
-  {
-    "question": "Name a cable type that may be buried direct in the ground without mechanical protection (AS/NZS 3000).",
-    "options": [
-      "Armoured sheathed cables",
-      "Standard flat TPS cables",
-      "Single-insulated TPS",
-      "Bare copper"
-    ],
-    "answer": "Armoured sheathed cables"
-  },
-  {
-    "question": "Which fittings must form part of the MEN protective earthing arrangement (AS/NZS 3000)?",
-    "options": [
-      "Main earthing conductor",
-      "Protective earthing conductors connecting exposed conductive parts",
-      "MEN link connection",
-      "All of the above"
-    ],
-    "answer": "All of the above"
-  },
-  {
-    "question": "What is a permitted supply arrangement for a 230 V socket outlet in Zone 3 of a shower area (AS/NZS 3000)?",
-    "options": [
-      "Protected by a 30 mA RCD",
-      "Individually supplied as a monitored earth",
-      "Supplied via a silicon controlled rectifier (SCR)",
-      "Not permitted at all"
-    ],
-    "answer": "Protected by a 30 mA RCD"
-  },
-  {
-    "question": "What is ONE requirement relating to discrimination of protective devices where safety services are installed (AS/NZS 3000)?",
-    "options": [
-      "Safety service fault will affect other safety services",
-      "Fault in general installation must not disconnect safety services",
-      "All protective devices must be RCDs",
-      "Lower rating is closer to supply"
-    ],
-    "answer": "Fault in general installation must not disconnect safety services"
-  },
-  {
-    "question": "What is the main difference between SELV and PELV circuits (AS/NZS 3000)?",
-    "options": [
-      "SELV has no connection to earth; PELV has one point earthed",
-      "PELV has no earth; SELV has one point earthed",
-      "SELV requires RCD; PELV does not",
-      "They are identical"
-    ],
-    "answer": "SELV has no connection to earth; PELV has one point earthed"
-  },
-  {
-    "question": "What is the minimum approach distance for a non-competent person working near 11 kV overhead lines (NZECP 34)?",
-    "options": [
-      "1.0 m",
-      "1.5 m",
-      "3.0 m",
-      "4.0 m"
-    ],
-    "answer": "4.0 m"
-  },
-  {
-    "question": "What is the minimum approach distance for a competent person working near 11 kV overhead lines with written consent (NZECP 34)?",
-    "options": [
-      "0.3 m",
-      "0.5 m",
-      "1.0 m",
-      "1.5 m"
-    ],
-    "answer": "1.0 m"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is the maximum motor rating that does not require overload protection?",
-    "options": [
-      "250 W",
-      "370 W",
-      "500 W",
-      "750 W"
-    ],
-    "answer": "370 W"
-  },
-  {
-    "question": "According to AS/NZS 3000, when may functional switching be used?",
-    "options": [
-      "Where operational control only is required, not for safety reasons",
-      "For emergency isolation",
-      "Only for water heaters",
-      "Never"
-    ],
-    "answer": "Where operational control only is required, not for safety reasons"
-  },
-  {
-    "question": "What is the required touch-voltage limit in low-voltage MEN systems before disconnection must occur (AS/NZS 3000)?",
-    "options": [
-      "25 V",
-      "50 V",
-      "110 V",
-      "230 V"
-    ],
-    "answer": "50 V"
-  },
-  {
-    "question": "What is the maximum disconnection time for socket outlet final subcircuits up to 63 A (AS/NZS 3000)?",
-    "options": [
-      "0.2 s",
-      "0.4 s",
-      "1.0 s",
-      "5.0 s"
-    ],
-    "answer": "0.4 s"
-  },
-  {
-    "question": "What is the minimum size equipotential bonding conductor required for metallic water piping when the largest mains conductor is 35 mm² (AS/NZS 3000)?",
-    "options": [
-      "2.5 mm²",
-      "4 mm²",
-      "6 mm²",
-      "10 mm²"
-    ],
-    "answer": "4 mm²"
-  },
-  {
-    "question": "Which types of luminaires do NOT require a protective earthing conductor (AS/NZS 3000)?",
-    "options": [
-      "Double insulated light fitting",
-      "Class II luminaires",
-      "ELV lighting points",
-      "All of the above"
-    ],
-    "answer": "All of the above"
-  },
-  {
-    "question": "Which situation is specifically deemed to make fittings electrically unsafe under the Electricity (Safety) Regulations 2010?",
-    "options": [
-      "Fittings are installed in a dry, ventilated cupboard",
-      "Fittings are installed so that designed cooling conditions are impaired",
-      "Fittings are labelled with their IP rating",
-      "Fittings are supplied from a SELV source"
-    ],
-    "answer": "Fittings are installed so that designed cooling conditions are impaired"
-  },
-  {
-    "question": "Which appliance is NOT electrically unsafe even though injury could result, under ESR 2010?",
-    "options": [
-      "An oven with a faulty door switch",
-      "Electrical appliances designed and used for patient treatment",
-      "A portable drill with damaged cord grip",
-      "A luminaire with exposed live parts"
-    ],
-    "answer": "Electrical appliances designed and used for patient treatment"
-  },
-  {
-    "question": "A fitting without a current AS/NZS 3760 tag can still be deemed electrically safe if which condition is met?",
-    "options": [
-      "It is supplied through a portable or installation RCD providing shock protection",
-      "It is new-in-box from any retailer",
-      "It has a manufacturer’s brochure",
-      "It is visually inspected only"
-    ],
-    "answer": "It is supplied through a portable or installation RCD providing shock protection"
-  },
-  {
-    "question": "Who may NOT inspect prescribed electrical work?",
-    "options": [
-      "A person who personally carried out the work",
-      "An electrical inspector competent for the installation type",
-      "A person who holds the appropriate authorization",
-      "All of these"
-    ],
-    "answer": "A person who personally carried out the work"
-  },
-  {
-    "question": "Before hiring out a caravan, what document must exist?",
-    "options": [
-      "Electrical Installation Certificate",
-      "Warrant of Electrical Fitness",
-      "Certificate of Verification",
-      "Electrical Safety Certificate"
-    ],
-    "answer": "Warrant of Electrical Fitness"
-  },
-  {
-    "question": "Who can issue a warrant of electrical fitness for a caravan?",
-    "options": [
-      "An EAS endorsed electrical worker",
-      "A person authorized to inspect mains work",
-      "The caravan owner",
-      "Only a registered inspector"
-    ],
-    "answer": "A person authorized to inspect mains work"
-  },
-  {
-    "question": "Which is a permitted termination for a tunnel-type terminal in AS/NZS 3000?",
-    "options": [
-      "A single screw with diameter 50% of tunnel diameter",
-      "Conductor clamped by suitable ferrules or plates in direct contact",
-      "Twisted conductors without a screw",
-      "Push-in spring clamp with no screw or ferrule"
-    ],
-    "answer": "Conductor clamped by suitable ferrules or plates in direct contact"
-  },
-  {
-    "question": "Which is an acceptable method to obtain the current value for voltage drop calculations in a final subcircuit (AS/NZS 3000)?",
-    "options": [
-      "Estimate 75% of the protective device rating",
-      "Use the maximum demand of the circuit",
-      "Always use nameplate current of the largest load",
-      "Use 1.5 × rated current"
-    ],
-    "answer": "Use the maximum demand of the circuit"
-  },
-  {
-    "question": "Why is orange underground-cable marker tape installed (AS/NZS 3000)?",
-    "options": [
-      "To improve heat dissipation",
-      "For early detection of underground wiring during excavation",
-      "To increase mechanical protection",
-      "To meet IP rating requirements"
-    ],
-    "answer": "For early detection of underground wiring during excavation"
-  },
-  {
-    "question": "A 230 V 2.5 mm² TPS socket-outlet circuit has combined phase+earth resistance of 1.95 Ω. Which protective device type and rating is suitable according to AS/NZS 3000?",
-    "options": [
-      "16 A Type B MCB",
-      "20 A Type B MCB",
-      "32 A Type C MCB",
-      "6 A HRC fuse"
-    ],
-    "answer": "16 A Type B MCB"
-  },
-  {
-    "question": "If an EFLI test is 1.84 Ω and the circuit is protected by an HRC fuse with maximum 0.4 s operating time, what is the maximum fuse rating permitted?",
-    "options": [
-      "16 A",
-      "20 A",
-      "25 A",
-      "32 A"
-    ],
-    "answer": "20 A"
-  },
-  {
-    "question": "Minimum vertical clearance for a 230 V insulated sub-main crossing a pedestrian-only footpath (NZECP 34)?",
-    "options": [
-      "2.2 m",
-      "2.4 m",
-      "2.7 m",
-      "3.0 m"
-    ],
-    "answer": "2.7 m"
-  },
-  {
-    "question": "Minimum vertical clearance for a 230 V insulated sub-main crossing a driveway (NZECP 34)?",
-    "options": [
-      "4.6 m",
-      "5.0 m",
-      "5.5 m",
-      "6.0 m"
-    ],
-    "answer": "5.5 m"
-  },
-  {
-    "question": "Earth fault-loop impedance is defined as the impedance of the loop that starts and ends at:",
-    "options": [
-      "The main earthing bar",
-      "The protective device",
-      "The point of earth fault",
-      "The supply transformer star point"
-    ],
-    "answer": "The point of earth fault"
-  },
-  {
-    "question": "Why must the earth fault-loop impedance be low?",
-    "options": [
-      "To minimize voltage drop in normal operation",
-      "To ensure automatic disconnection within the required time under fault conditions",
-      "To limit touch current during insulation resistance testing",
-      "To reduce prospective short-circuit current"
-    ],
-    "answer": "To ensure automatic disconnection within the required time under fault conditions"
-  },
-  {
-    "question": "Which is a condition for using aluminium as an earthing conductor (AS/NZS 3000)?",
-    "options": [
-      "May be installed underground in damp conditions",
-      "Must be at least 6 mm² and solid",
-      "Minimum 16 mm² for main earthing conductors and care to prevent corrosion",
-      "Only permitted for supplementary bonding"
-    ],
-    "answer": "Minimum 16 mm² for main earthing conductors and care to prevent corrosion"
-  },
-  {
-    "question": "What material/type is specified for copper earthing conductors (AS/NZS 3000)?",
-    "options": [
-      "High-conductivity copper, stranded or braided",
-      "Tinned steel only",
-      "Any metallic conductor",
-      "Solid copper only, any size"
-    ],
-    "answer": "High-conductivity copper, stranded or braided"
-  },
-  {
-    "question": "Which is a valid method of achieving isolation on a switchboard (AS/NZS 3000)?",
-    "options": [
-      "RCD test button",
-      "Switch-disconnector (isolator)",
-      "Voltage presence indicator",
-      "Pilot light switch"
-    ],
-    "answer": "Switch-disconnector (isolator)"
-  },
-  {
-    "question": "In multi-occupancy premises, which requirement applies to isolation switches (AS/NZS 3000)?",
-    "options": [
-      "One main switch total for the building only",
-      "Each occupier shall have ready access to an isolating switch that isolates their portion",
-      "All isolation must be at the main switchboard only",
-      "A key-switch is mandatory for each tenancy"
-    ],
-    "answer": "Each occupier shall have ready access to an isolating switch that isolates their portion"
-  },
-  {
-    "question": "Protection by automatic disconnection of supply is intended to limit which hazard?",
-    "options": [
-      "Prospective short-circuit current",
-      "Prospective touch voltage under fault conditions",
-      "Overload heating",
-      "Electromagnetic interference"
-    ],
-    "answer": "Prospective touch voltage under fault conditions"
-  },
-  {
-    "question": "A device used for automatic disconnection of supply must NOT:",
-    "options": [
-      "Be manually operable",
-      "Carry its full-load current",
-      "Be capable of automatically reclosing",
-      "Indicate ON/OFF state"
-    ],
-    "answer": "Be capable of automatically reclosing"
-  },
-  {
-    "question": "Which devices can provide automatic disconnection of supply according to AS/NZS 3000?",
-    "options": [
-      "Miniature overcurrent circuit-breakers to AS/NZS 60898",
-      "Capacitors",
-      "Voltage indicators",
-      "Pilot relays"
-    ],
-    "answer": "Miniature overcurrent circuit-breakers to AS/NZS 60898"
-  },
-  {
-    "question": "What is one sizing requirement for the MEN link at the MEN switchboard (AS/NZS 3000)?",
-    "options": [
-      "Not less than 2.5 mm²",
-      "Not less than the current-carrying capacity of the main neutral conductor",
-      "Equal to the largest phase conductor size",
-      "Always 16 mm²"
-    ],
-    "answer": "Not less than the current-carrying capacity of the main neutral conductor"
-  },
-  {
-    "question": "Which wiring enclosure is permitted for insulated unsheathed cables (AS/NZS 3000)?",
-    "options": [
-      "Open cable tray with no cover",
-      "Rigid or flexible insulating conduit to AS/NZS 2053",
-      "Barely supported catenary wire",
-      "Behind drywall with no conduit"
-    ],
-    "answer": "Rigid or flexible insulating conduit to AS/NZS 2053"
-  },
-  {
-    "question": "How must a change of wiring enclosures be made (AS/NZS 3000)?",
-    "options": [
-      "By simply overlapping conduits",
-      "By a device that protects the insulation and maintains continuity of conductive enclosures",
-      "By taping the joint",
-      "No special method is required"
-    ],
-    "answer": "By a device that protects the insulation and maintains continuity of conductive enclosures"
-  },
-  {
-    "question": "Conductors that form part of different electrical installations shall:",
-    "options": [
-      "Be installed together for neatness",
-      "Not be installed in the same wiring enclosure or multicore cable",
-      "Share a common neutral bar",
-      "Be separated by insulating tape only"
-    ],
-    "answer": "Not be installed in the same wiring enclosure or multicore cable"
-  },
-  {
-    "question": "Low-voltage track systems must be supported so that (choose the TRUE requirement set):",
-    "options": [
-      "Supports at ≤3 m intervals; any design acceptable; no sag permitted",
-      "Supports of appropriate design; spaced ≤1.5 m; arranged to prevent sag/undue stress",
-      "Supports only at the ends; sag is acceptable; spacing not specified",
-      "Cable ties every 2 m are sufficient"
-    ],
-    "answer": "Supports of appropriate design; spaced ≤1.5 m; arranged to prevent sag/undue stress"
-  },
-  {
-    "question": "Where are wiring systems likely to be disturbed (AS/NZS 3000)?",
-    "options": [
-      "Inside sealed switchboards only",
-      "Above suspended ceilings with no access",
-      "On the surface of walls/ceilings accessible to people",
-      "Within cast concrete slabs"
-    ],
-    "answer": "On the surface of walls/ceilings accessible to people"
-  },
-  {
-    "question": "Which statement about Certificates of Compliance (CoC) is TRUE under ESR 2010?",
-    "options": [
-      "A CoC may not be issued for any prescribed work",
-      "A CoC must include statements that the work was done lawfully/safely and the information is correct",
-      "A CoC is optional for mains work",
-      "A CoC must always be accompanied by an EWRB audit report"
-    ],
-    "answer": "A CoC must include statements that the work was done lawfully/safely and the information is correct"
-  },
-  {
-    "question": "For electrical safety certificates (ESC), completion is taken as:",
-    "options": [
-      "The date the invoice is issued",
-      "When the installation is connected to supply (or work completed if not disconnected)",
-      "When the inspector signs the RoI",
-      "When the distributor energizes the service"
-    ],
-    "answer": "When the installation is connected to supply (or work completed if not disconnected)"
-  },
-  {
-    "question": "Polarity testing is intended to prevent which situation (AS/NZS 3000)?",
-    "options": [
-      "RCD nuisance tripping",
-      "Transposition leading to exposed parts becoming energised",
-      "EMC interference",
-      "Overvoltage on lighting circuits"
-    ],
-    "answer": "Transposition leading to exposed parts becoming energised"
-  },
-  {
-    "question": "Which instrument/equipment combination is listed for live polarity testing at mains?",
-    "options": [
-      "Megohmmeter only",
-      "Voltage tester, temporary earth, and trailing lead",
-      "Loop impedance tester only",
-      "Tong tester and proving unit"
-    ],
-    "answer": "Voltage tester, temporary earth, and trailing lead"
-  },
-  {
-    "question": "Swimming pool zones require what minimum IP ratings (AS/NZS 3000)?",
-    "options": [
-      "Zone 0 IPX7; Zone 1 IPX4; Zone 2 IPX2",
-      "Zone 0 IPX8; Zone 1 IPX5; Zone 2 IPX4",
-      "Zone 0 IPX8; Zone 1 IPX6; Zone 2 IPX5",
-      "Zone 0 IPX7; Zone 1 IPX5; Zone 2 IPX4"
-    ],
-    "answer": "Zone 0 IPX8; Zone 1 IPX5; Zone 2 IPX4"
-  },
-  {
-    "question": "What is the Minimum distance from pool edge for general-use 230 V socket-outlets (AS/NZS 3000)?",
-    "options": [
-      "1.0 m",
-      "1.5 m",
-      "2.0 m",
-      "2.5 m"
-    ],
-    "answer": "2.0 m"
-  },
-  {
-    "question": "Which protection methods are permitted for pool-area socket-outlets?",
-    "options": [
-      "30 mA RCD or individually supplied separated circuit",
-      "RCD 100 mA or SELV only",
-      "Double-pole switching only",
-      "Overload protection only"
-    ],
-    "answer": "30 mA RCD or individually supplied separated circuit"
-  },
-  {
-    "question": "In Zone 1 of a swimming pool, which types of 230 V equipment are permitted when IPX5 is achieved?",
-    "options": [
-      "Class I fixed equipment (no RCD) only",
-      "Class II equipment fixed in position and Class I fixed with RCD protection",
-      "Portable Class I tools only",
-      "Any appliance if behind a door"
-    ],
-    "answer": "Class II equipment fixed in position and Class I fixed with RCD protection"
-  },
-  {
-    "question": "Calculate the total voltage drop allowed for a 230 V circuit where the limit is 2.5%:",
-    "options": [
-      "3.25 V",
-      "5.75 V",
-      "9.2 V",
-      "11.5 V"
-    ],
-    "answer": "5.75 V"
-  },
-  {
-    "question": "Under ESR 2010, which situation deems a low voltage fitting electrically unsafe BEFORE installation?",
-    "options": [
-      "Fitting has double insulation only",
-      "Unearthed conductive parts are separated from live parts by only basic insulation",
-      "The fitting is labelled CE",
-      "It is supplied with test certificate"
-    ],
-    "answer": "Unearthed conductive parts are separated from live parts by only basic insulation"
-  },
-  {
-    "question": "According to ESR 2010, what is the maximum operating time permitted for an RCD installed for the protection of property at rated residual current?",
-    "options": [
-      "1.0 s",
-      "0.5 s",
-      "0.15 s",
-      "0.05 s"
-    ],
-    "answer": "0.5 s"
-  },
-  {
-    "question": "According to ESR 2010, what is the maximum rated residual current permitted for a property-protection RCD?",
-    "options": [
-      "30 mA",
-      "100 mA",
-      "300 mA",
-      "500 mA"
-    ],
-    "answer": "300 mA"
-  },
-  {
-    "question": "When carrying out alterations/additions to part of an installation, which requirement applies to the unaffected part (AS/NZS 3000)?",
-    "options": [
-      "It must be retested for insulation resistance only",
-      "The safety of the remaining installation must not be impaired",
-      "It must be fully rewired",
-      "No verification is required"
-    ],
-    "answer": "The safety of the remaining installation must not be impaired"
-  },
-  {
-    "question": "When can maximum demand be determined by assessment (AS/NZS 3000)?",
-    "options": [
-      "When the installation is small and simple",
-      "Where the installation is large/complex or has fluctuating/intermittent loads, or special occupancy",
-      "Always for socket outlet circuits",
-      "When specified by inspector only"
-    ],
-    "answer": "Where the installation is large/complex or has fluctuating/intermittent loads, or special occupancy"
-  },
-  {
-    "question": "For buried submain cable, what must be installed during installation?",
-    "options": [
-      "Orange marker tape",
-      "Plastic ducting only",
-      "Warning signs every 10 m",
-      "Steel conduit"
-    ],
-    "answer": "Orange marker tape"
-  },
-  {
-    "question": "For buried submain cable after installation, what is ONE method of indicating position (AS/NZS 3000)?",
-    "options": [
-      "Chalk markings on footpath",
-      "Permanent cable marker signs OR recording on a plan at switchboard",
-      "Spray paint line",
-      "Mark on nearest pole"
-    ],
-    "answer": "Permanent cable marker signs OR recording on a plan at switchboard"
-  },
-  {
-    "question": "Which is a requirement for capacitors connected in parallel with appliances (AS/NZS 3000)?",
-    "options": [
-      "No switch or fuse may be inserted between capacitor and appliance",
-      "Capacitor may float when disconnected",
-      "Fuse protection mandatory on capacitor",
-      "Capacitor must be >10 µF"
-    ],
-    "answer": "No switch or fuse may be inserted between capacitor and appliance"
-  },
-  {
-    "question": "Which bathroom socket-outlet situations require RCD protection (AS/NZS 3000)?",
-    "options": [
-      "Only Zone 1 and Zone 2",
-      "Zone 2 and Zone 3",
-      "Only Zone 0",
-      "Outside bathroom only"
-    ],
-    "answer": "Zone 2 and Zone 3"
-  },
-  {
-    "question": "Overcurrent protection requirements for extra-low voltage circuits where supply is earthed at point of supply (AS/NZS 3000):",
-    "options": [
-      "Devices must be installed in all unearthed conductors",
-      "No protection required",
-      "RCD only",
-      "ELV circuits never require protection"
-    ],
-    "answer": "Devices must be installed in all unearthed conductors"
-  },
-  {
-    "question": "Which is an example of a defined hazardous area (AS/NZS 3000)?",
-    "options": [
-      "Kitchen with gas hob",
-      "Bathroom Zone 1",
-      "Explosive gas atmosphere present",
-      "Switchboard cupboard"
-    ],
-    "answer": "Explosive gas atmosphere present"
-  },
-  {
-    "question": "One part of automatic disconnection of supply, can be achieved by which method (AS/NZS 3000)?",
-    "options": [
-      "Equipotential bonding connecting exposed parts to PE conductor",
-      "Earthing electrodes only",
-      "Using double insulation",
-      "Voltage indicators"
-    ],
-    "answer": "Equipotential bonding connecting exposed parts to PE conductor"
-  },
-  {
-    "question": "Which requirement applies to earthing system impedance for automatic disconnection of supply (AS/NZS 3000)?",
-    "options": [
-      "Shall be low enough to operate protective device in required time",
-      "No more than 100 ohms always",
-      "Must be exactly 1 Ω",
-      "Not relevant"
-    ],
-    "answer": "Shall be low enough to operate protective device in required time"
-  },
-  {
-    "question": "In an Earth Fault-Loop Impedance (EFLI) test, which path is measured (AS/NZS 3000)?",
-    "options": [
-      "From active to neutral only",
-      "From point of fault through active, neutral, MEN and PE back to transformer",
-      "From socket to main switch only",
-      "From active to earth electrode only"
-    ],
-    "answer": "From point of fault through active, neutral, MEN and PE back to transformer"
-  },
-  {
-    "question": "What IP rating is required for luminaires installed in Zone 1 of a communal shower (AS/NZS 3000)?",
-    "options": [
-      "IPX2",
-      "IPX4",
-      "IPX5",
-      "IPX7"
-    ],
-    "answer": "IPX5"
-  },
-  {
-    "question": "What IP rating is required for socket-outlets in Zone 3 of a bathroom (AS/NZS 3000)?",
-    "options": [
-      "IPX2",
-      "IPX4",
-      "IPX5",
-      "IPX7"
-    ],
-    "answer": "IPX5"
-  },
-  {
-    "question": "Which protection is required for socket-outlets in Zone 3 (AS/NZS 3000)?",
-    "options": [
-      "30 mA RCD OR supplied individually by separated circuit",
-      "100 mA RCD only",
-      "Fuse only",
-      "Double insulation only"
-    ],
-    "answer": "30 mA RCD OR supplied individually by separated circuit"
-  },
-  {
-    "question": "Which TWO types of low-voltage installations must comply with Part 2 of AS/NZS 3000?",
-    "options": [
-      "Domestic installations ≤80A single-phase or ≤50A multi-phase",
-      "All temporary construction sites",
-      "Lighting installations only",
-      "Battery storage systems only"
-    ],
-    "answer": "Domestic installations ≤80A single-phase or ≤50A multi-phase"
-  },
-  {
-    "question": "Once a CoC for high-risk prescribed electrical work is issued, who must issue the Record of Inspection?",
-    "options": [
-      "Any electrical worker",
-      "A registered inspector authorised to inspect high-risk work",
-      "The client",
-      "The distributor"
-    ],
-    "answer": "A registered inspector authorised to inspect high-risk work"
-  },
-  {
-    "question": "In AS/NZS 3000, what is the minimum IP rating for a luminaire installed in Zone 1 of a shower?",
-    "options": [
-      "IPX2",
-      "IPX4",
-      "IPX5",
-      "IPX7"
-    ],
-    "answer": "IPX4"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is the purpose of equipotential bonding?",
-    "options": [
-      "To ensure neutral currents flow evenly",
-      "To bring exposed and extraneous conductive parts to the same potential and reduce touch voltages",
-      "To limit overvoltage from lightning",
-      "To improve loop impedance testing accuracy"
-    ],
-    "answer": "To bring exposed and extraneous conductive parts to the same potential and reduce touch voltages"
-  },
-  {
-    "question": "Which device type is NOT permitted for automatic disconnection of supply (AS/NZS 3000)?",
-    "options": [
-      "MCB",
-      "HRC fuse",
-      "Device capable of automatic reclosing",
-      "RCD"
-    ],
-    "answer": "Device capable of automatic reclosing"
-  },
-  {
-    "question": "What is the minimum installation depth of a driven earth electrode in New Zealand (AS/NZS 3000)?",
-    "options": [
-      "0.6 m",
-      "1.2 m",
-      "1.8 m",
-      "2.0 m"
-    ],
-    "answer": "1.8 m"
-  },
-  {
-    "question": "Which requirement applies to isolation switches in multi-occupancy premises?",
-    "options": [
-      "One main switch total is enough",
-      "Each occupier shall have ready access to an isolating switch for their portion",
-      "All isolation must be done at the service main only",
-      "Isolation switches must be locked at all times"
-    ],
-    "answer": "Each occupier shall have ready access to an isolating switch for their portion"
-  },
-  {
-    "question": "In AS/NZS 3000, segregation of ELV and LV conductors in a multicore cable requires what?",
-    "options": [
-      "Coloured sleeving only",
-      "Live parts of separated circuits to be reliably and effectively separated",
-      "Extra insulation on LV only",
-      "Bonding of ELV to LV neutral"
-    ],
-    "answer": "Live parts of separated circuits to be reliably and effectively separated"
-  },
-  {
-    "question": "According to AS/NZS 3000, what is the minimum copper main earthing conductor size for a 25 mm² aluminium active conductor cable?",
-    "options": [
-      "2.5 mm²",
-      "6 mm²",
-      "10 mm²",
-      "16 mm²"
-    ],
-    "answer": "6 mm²"
-  },
-  {
-    "question": "Under AS/NZS 3000, how must lighting final subcircuits requiring RCD protection be arranged in a new 230 V domestic installation?",
-    "options": [
-      "All on one RCD",
-      "Distributed across at least 2 RCDs",
-      "Each on its own RCD",
-      "On an RCD only if on outdoor circuits"
-    ],
-    "answer": "Distributed across at least 2 RCDs"
-  },
-  {
-    "question": "What is the maximum number of final subcircuits that may be protected by a single RCD under AS/NZS 3000?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "6"
-    ],
-    "answer": "3"
-  },
-  {
-    "question": "For overhead line crossings over areas traversed by vehicles on a farm, what is the minimum vertical clearance for 400 V uninsulated conductors per AS/NZS 3000?",
-    "options": [
-      "4.0 m",
-      "4.6 m",
-      "5.5 m",
-      "6.0 m"
-    ],
-    "answer": "5.5 m"
-  },
-  {
-    "question": "For overhead line crossings over areas traversed by vehicles on a farm, what is the minimum vertical clearance for 400 V insulated conductors per AS/NZS 3000?",
-    "options": [
-      "3.7 m",
-      "4.0 m",
-      "4.6 m",
-      "5.5 m"
-    ],
-    "answer": "4.6 m"
-  },
-  {
-    "question": "What is the minimum IP rating for a luminaire installed in Zone 0 of a bathroom according to AS/NZS 3000?",
-    "options": [
-      "IPX4",
-      "IPX5",
-      "IPX7",
-      "IP24"
-    ],
-    "answer": "IPX7"
-  },
-  {
-    "question": "What is the minimum IP rating for a switch installed in Zone 1 of a bathroom according to AS/NZS 3000?",
-    "options": [
-      "IPX2",
-      "IPX3",
-      "IPX4",
-      "IP24"
-    ],
-    "answer": "IPX4"
-  },
-  {
-    "question": "A 230 V socket-outlet is to be installed in Zone 3 of a bathroom. Which of the following provides compliant protection under AS/NZS 3000?",
-    "options": [
-      "Supply via an auto-transformer 1:1",
-      "Protected by a 30 mA RCD",
-      "Supplied from a 10 A MCB only",
-      "No protection required"
-    ],
-    "answer": "Protected by a 30 mA RCD"
-  },
-  {
-    "question": "In a sauna, what minimum degree of protection (IP rating) must electrical equipment have within the sauna room according to AS/NZS 3000?",
-    "options": [
-      "IPX2",
-      "IPX4",
-      "IPX4B or IP24",
-      "IPX7"
-    ],
-    "answer": "IPX4B or IP24"
-  },
-  {
-    "question": "Which Standard applies when issuing a warrant of electrical fitness (WoEF) for a caravan under the Electricity (Safety) Regulations 2010?",
-    "options": [
-      "AS/NZS 3019",
-      "AS/NZS 3001",
-      "AS/NZS 3760",
-      "AS/NZS 3004.2"
-    ],
-    "answer": "AS/NZS 3001"
-  },
-  {
-    "question": "Which Standard applies when issuing a warrant of electrical fitness (WoEF) for a pleasure vessel under the Electricity (Safety) Regulations 2010?",
-    "options": [
-      "AS/NZS 3019",
-      "AS/NZS 3001",
-      "AS/NZS 3004.2",
-      "AS/NZS 3551"
-    ],
-    "answer": "AS/NZS 3004.2"
-  },
-  {
-    "question": "What is the purpose of identifying a common neutral in a switchboard per AS/NZS 3000?",
-    "options": [
-      "To balance three-phase loads",
-      "To identify associated active conductors",
-      "To distinguish MEN links",
-      "To indicate SELV circuits"
-    ],
-    "answer": "To identify associated active conductors"
-  },
-  {
-    "question": "Under AS/NZS 3000, can LV and ELV conductors share a multicore cable?",
-    "options": [
-      "Yes, with any insulation",
-      "Yes, if all conductors are insulated for the highest voltage present",
-      "No, never",
-      "Only if ELV is PELV"
-    ],
-    "answer": "Yes, if all conductors are insulated for the highest voltage present"
-  },
-  {
-    "question": "Devices used for stopping a motor must, among other things:",
-    "options": [
-      "Be located remotely only",
-      "Be able to automatically reclose",
-      "Remain effective if a fault occurs in a motor-control circuit",
-      "Be installed only on the neutral"
-    ],
-    "answer": "Remain effective if a fault occurs in a motor-control circuit"
-  },
-  {
-    "question": "For a 230 V, 2.5 mm² TPS socket-outlet circuit with combined phase and earth resistance of 1.02 Ω, what is the suitable protective device?",
-    "options": [
-      "40 A Type B MCB",
-      "16 A Type C MCB",
-      "20 A Type D MCB",
-      "32 A HRC fuse"
-    ],
-    "answer": "16 A Type C MCB"
-  },
-  {
-    "question": "A socket-outlet circuit has an earth-fault loop impedance of 1.84 Ω and requires disconnection within 0.4 s. What is the maximum HRC fuse rating permitted by AS/NZS 3000?",
-    "options": [
-      "10 A",
-      "16 A",
-      "20 A",
-      "32 A"
-    ],
-    "answer": "20 A"
-  },
-  {
-    "question": "When replacing a domestic switchboard that previously had no RCD protection on final subcircuits, what is required by AS/NZS 3000?",
-    "options": [
-      "No RCDs required if existing wiring remains",
-      "Install RCD protection to applicable final subcircuits",
-      "RCDs only for socket-outlet circuits",
-      "RCDs only if the main switch is replaced"
-    ],
-    "answer": "Install RCD protection to applicable final subcircuits"
-  },
-  {
-    "question": "In a domestic installation with three 10 A lighting MCBs, what is the minimum number of RCCBs required under AS/NZS 3000?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": "2"
-  },
-  {
-    "question": "In a domestic installation with seven 20 A socket-outlet MCBs, what is the minimum number of RCCBs required under AS/NZS 3000?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "answer": "3"
-  },
-  {
-    "question": "What is the maximum operating time permitted for an RCD installed for the protection of property under the Electricity (Safety) Regulations 2010?",
-    "options": [
-      "0.1 s at IΔn",
-      "0.15 s at 5×IΔn",
-      "0.3 s at IΔn",
-      "0.5 s at IΔn"
-    ],
-    "answer": "0.5 s at IΔn"
-  },
-  {
-    "question": "What is the maximum rated residual current for an RCD installed for the protection of property under the Electricity (Safety) Regulations 2010?",
-    "options": [
-      "30 mA",
-      "100 mA",
-      "300 mA",
-      "500 mA"
-    ],
-    "answer": "300 mA"
-  },
-  {
-    "question": "Which standard applies for issuing a WoEF for a caravan in New Zealand?",
-    "options": [
-      "AS/NZS 3001",
-      "AS/NZS 3004.2",
-      "AS/NZS 3019",
-      "AS/NZS 3760"
-    ],
-    "answer": "AS/NZS 3001"
-  },
-  {
-    "question": "Which TWO types of final subcircuits in a new domestic installation must have RCD protection per AS/NZS 3000?",
-    "options": [
-      "Lighting and socket-outlet final subcircuits",
-      "Cooker and water heater circuits",
-      "HV circuits and mains",
-      "Submains and data circuits"
-    ],
-    "answer": "Lighting and socket-outlet final subcircuits"
-  },
-  {
-    "question": "Which TWO conditions in ESR 2010 explicitly define low-voltage fittings as electrically unsafe before installation? (Choose the one that is actually listed.)",
-    "options": [
-      "Unearthed conductive parts are separated from live parts by only basic insulation",
-      "The fitting lacks a country-of-origin label",
-      "The fitting contains any polymeric material",
-      "The fitting is not painted"
-    ],
-    "answer": "Unearthed conductive parts are separated from live parts by only basic insulation"
-  },
-  {
-    "question": "At rated residual current, what is the maximum operating time for a property-protection RCD per ESR 2010?",
-    "options": [
-      "0.05 s",
-      "0.15 s",
-      "0.5 s",
-      "1.0 s"
-    ],
-    "answer": "0.5 s"
-  },
-  {
-    "question": "At 5× rated residual current, what is the maximum operating time for a property-protection RCD per ESR 2010?",
-    "options": [
-      "0.04 s",
-      "0.15 s",
-      "0.5 s",
-      "1.0 s"
-    ],
-    "answer": "0.15 s"
-  },
-  {
-    "question": "What is the maximum rated residual current allowed for a medical area RCD (ESR 2010)?",
-    "options": [
-      "30 mA",
-      "10 mA",
-      "300 mA",
-      "500 mA"
-    ],
-    "answer": "10 mA"
-  },
-  {
-    "question": "An alteration is made to part of an installation. What must be verified for the remaining (unaltered) installation under AS/NZS 3000?",
-    "options": [
-      "The remaining installation must be rewired with TPS",
-      "The alteration must not impair the safety of the existing installation",
-      "Only insulation resistance must be rechecked",
-      "No verification is necessary"
-    ],
-    "answer": "The alteration must not impair the safety of the existing installation"
-  },
-  {
-    "question": "Which situation justifies determining maximum demand by assessment (AS/NZS 3000)?",
-    "options": [
-      "Any small dwelling",
-      "Installations with fluctuating/intermittent loading or definite duty cycle",
-      "Only three-phase commercial kitchens",
-      "Any outdoor lighting circuit"
-    ],
-    "answer": "Installations with fluctuating/intermittent loading or definite duty cycle"
-  },
-  {
-    "question": "When burying direct a neutral-screen submain, which indicator must be installed during installation?",
-    "options": [
-      "Blue marker tape",
-      "Orange marker tape",
-      "Yellow caution tags",
-      "Green warning posts"
-    ],
-    "answer": "Orange marker tape"
-  },
-  {
-    "question": "After burying a direct-laid submain, which method is acceptable to indicate its route?",
-    "options": [
-      "Spray paint line on grass",
-      "Permanent cable marker signs at entries/exits or an as-built plan at the origin switchboard",
-      "Chalk arrows on walls",
-      "GPS-only record"
-    ],
-    "answer": "Permanent cable marker signs at entries/exits or an as-built plan at the origin switchboard"
-  },
-  {
-    "question": "Capacitors connected in parallel with appliances must be installed so that:",
-    "options": [
-      "A switch or fuse is between the capacitor and appliance",
-      "The appliance windings form a permanent discharge path for the capacitor",
-      "They are isolated from appliance control gear",
-      "They are mounted at least 2 m above floor"
-    ],
-    "answer": "The appliance windings form a permanent discharge path for the capacitor"
-  },
-  {
-    "question": "A connection to an earth electrode for a main earthing conductor must:",
-    "options": [
-      "Be submerged in water",
-      "Be accessible for visual inspection and testing",
-      "Use aluminium lugs only",
-      "Be made with soldered joints only"
-    ],
-    "answer": "Be accessible for visual inspection and testing"
-  },
-  {
-    "question": "In bathrooms, RCD protection for socket-outlets is required when they are installed in which zones?",
-    "options": [
-      "Zone 0 only",
-      "Zone 1 and Zone 2 only",
-      "Zone 2 or Zone 3",
-      "No RCD required if IPX5"
-    ],
-    "answer": "Zone 2 or Zone 3"
-  },
-  {
-    "question": "For an earthed ELV system, where shall overcurrent protective devices be installed?",
-    "options": [
-      "Only in the red",
-      "Only in the black",
-      "In all unearthed conductors",
-      "No protection required"
-    ],
-    "answer": "In all unearthed conductors"
-  },
-  {
-    "question": "Lighting circuits in a dwelling that require RCD protection should be distributed across:",
-    "options": [
-      "At least two RCDs",
-      "One single RCD",
-      "An RCBO per circuit only",
-      "No distribution requirement"
-    ],
-    "answer": "At least two RCDs"
-  },
-  {
-    "question": "A motor stopping device must:",
-    "options": [
-      "Be capable of automatically reclosing",
-      "Remain effective if a fault occurs in a motor-control circuit",
-      "Be fitted only on the neutral",
-      "Be lockable only"
-    ],
-    "answer": "Remain effective if a fault occurs in a motor-control circuit"
-  },
-  {
-    "question": "Where is the neutral conductor earthed in an MEN system? (Choose the best answer.)",
-    "options": [
-      "At the load side of every RCBO",
-      "At multiple points throughout the system",
-      "At every socket-outlet",
-      "Only at distribution transformers"
-    ],
-    "answer": "At multiple points throughout the system"
-  },
-  {
-    "question": "When earthing is used for both protective and functional purposes, which requirement applies?",
-    "options": [
-      "Functional requirement prevails",
-      "Protective requirement prevails",
-      "Neither prevails",
-      "Whichever has lower impedance prevails"
-    ],
-    "answer": "Protective requirement prevails"
-  },
-  {
-    "question": "When may conductive conduit be regarded as a protective earthing conductor?",
-    "options": [
-      "Never",
-      "Only if non-metallic",
-      "Where the equipment is supplied by conductors within the enclosure and the enclosure provides a reliable earth path",
-      "Only if painted green"
-    ],
-    "answer": "Where the equipment is supplied by conductors within the enclosure and the enclosure provides a reliable earth path"
-  },
-  {
-    "question": "Using Table C2 of AS/NZS 3000 for load group B(i), 10 × 10 A socket-outlets contribute approximately how many amps to maximum demand?",
-    "options": [
-      "8.3 A",
-      "26.0 A",
-      "33.7 A",
-      "40.0 A"
-    ],
-    "answer": "33.7 A"
-  },
-  {
-    "question": "Using Table C2 load group B(ii), 10 × 10 A socket-outlets contribute approximately how many amps to maximum demand?",
-    "options": [
-      "6.0 A",
-      "8.26 A",
-      "16.0 A",
-      "26.25 A"
-    ],
-    "answer": "8.26 A"
-  },
-  {
-    "question": "Two 15 A socket-outlets installed in a school, contribute how many amps per AS/NZS 3000?",
-    "options": [
-      "15 A",
-      "22.5 A",
-      "26.25 A",
-      "30 A"
-    ],
-    "answer": "26.25 A"
-  },
-  {
-    "question": "Two 1.5 kW hand-dryers at 230 V with 0.75 diversity contribute approximately:",
-    "options": [
-      "6.5 A",
-      "9.78 A",
-      "13.0 A",
-      "15.0 A"
-    ],
-    "answer": "9.78 A"
-  },
-  {
-    "question": "Two 2 kW instantaneous heaters at 230 V with 0.75 diversity contribute approximately:",
-    "options": [
-      "8.7 A",
-      "13.04 A",
-      "17.4 A",
-      "26.1 A"
-    ],
-    "answer": "13.04 A"
-  },
-  {
-    "question": "A 6 kW input air conditioner in a single domestic installation contributes approximately:",
-    "options": [
-      "12.4 A",
-      "21.3 A",
-      "19.6 A",
-      "26.09 A"
-    ],
-    "answer": "19.6 A"
-  }
+{
+"question": "What is the minimum cross-sectional area of a copper main Earth conductor for a domestic installation 16mm² size active?",
+"options": [
+"6mm²",
+"10mm²",
+"16mm²",
+"25mm²"
+],
+"answer": "6mm²",
+"reference": "AS/NZS 3000:2007, Section 5, Table 5.1"
+},
+{
+"question": "According to AS/NZS 3000, what is the maximum permitted earth fault loop impedance (Zs) for a 32A Type B circuit breaker protecting a circuit?",
+"options": [
+"0.44Ω",
+"0.72Ω",
+"1.80Ω",
+"1.44Ω"
+],
+"answer": "1.80Ω",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1"
+},
+{
+"question": "Which of the following is NOT a recognized method of basic protection against electric shock under normal conditions?",
+"options": [
+"Basic Insulation",
+"Barriers or Enclosures",
+"Placing out of reach",
+"Using a Residual Current Device (RCD)"
+],
+"answer": "Using a Residual Current Device (RCD)",
+"reference": "AS/NZS 3000:2007, Section 1, 1.5.4.2"
+},
+{
+"question": "In a TN-C-S earthing system, the installation's connection to earth is provided by:",
+"options": [
+"The earth electrode by a telegraph pole",
+"An earth electrode connected to the main earth terminal",
+"The metallic sheath of a cable",
+"The neutral conductor downstream of the service fuse"
+],
+"answer": "An earth electrode connected to the main earth terminal",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.3.2"
+},
+{
+"question": "What is the maximum permitted voltage drop for a lighting circuit in a low-voltage installation?",
+"options": [
+"2%",
+"3%",
+"4%",
+"5%"
+],
+"answer": "5%",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.6.2"
+},
+{
+"question": "A 30mA RCD must trip within what time at its rated residual current (I∆n)?",
+"options": [
+"40ms",
+"150ms",
+"200ms",
+"300ms"
+],
+"answer": "300ms",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24(3)"
+},
+{
+"question": "Which IP rating would be most suitable for a light installed in zone 2 of a bathroom?",
+"options": [
+"IPX0",
+"IPX2",
+"IPX4",
+"IPX7"
+],
+"answer": "IPX4",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "What does the term 'SELV' stand for in electrical regulations?",
+"options": [
+"Standard Extra-Low Voltage",
+"Saturated Earth Low Voltage",
+"Separated Extra-Low Voltage",
+"Systematic Electrical Low Voltage"
+],
+"answer": "Separated Extra-Low Voltage",
+"reference": "AS/NZS 3000:2007, Clause 1.4.83"
+},
+{
+"question": "What colour must be used to identify a protective conductor (earth wire)?",
+"options": [
+"Brown",
+"Blue",
+"Green-and-yellow",
+"Grey"
+],
+"answer": "Green-and-yellow",
+"reference": "AS/NZS 3000:2007, Section 3 Table 3.4"
+},
+{
+"question": "An electrical certificate of compliance must be provided for which of the following?",
+"options": [
+"Replacing a socket outlet like-for-like",
+"Replacing a damaged switch",
+"A new circuit installation",
+"Replacing a light fitting"
+],
+"answer": "A new circuit installation",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 65"
+},
+{
+"question": "What is the purpose of equipotential bonding?",
+"options": [
+"To limit the magnitude of fault current",
+"To reduce the risk of fire",
+"To prevent a dangerous potential difference between extraneous-conductive-parts",
+"To improve the power factor of the installation"
+],
+"answer": "To prevent a dangerous potential difference between extraneous-conductive-parts",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.6.1"
+},
+{
+"question": "For a standard final sub-circuit, protected by a 32A device, what is the minimum cable size?",
+"options": [
+"1.5mm²",
+"2.5mm²",
+"4.0mm²",
+"6.0mm²"
+],
+"answer": "4.0mm²",
+"reference": "AS/NZS 3000:2007, Appendix C, Table C5"
+},
+{
+"question": "What is the primary function of a circuit breaker?",
+"options": [
+"To regulate voltage",
+"To provide overcurrent protection",
+"To correct power factor",
+"To prevent electric shock"
+],
+"answer": "To provide overcurrent protection",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.5.2"
+},
+{
+"question": "What is the primary purpose of an RCD?",
+"options": [
+"Overcurrent protection",
+"Short circuit protection",
+"Additional protection for electric shock",
+"Voltage regulation"
+],
+"answer": "Additional protection for electric shock",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6"
+},
+{
+"question": "In a TN-C-S system, the 'C-S' stands for:",
+"options": [
+"Combined-Separate",
+"Concentric-Split",
+"Combined-System",
+"Circuit-Separate"
+],
+"answer": "Combined-Separate",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.1.3"
+},
+{
+"question": "What is the maximum disconnection time for a final sub-circuit supplying sockets up to 63A?",
+"options": [
+"0.2s",
+"0.4s",
+"1s",
+"5s"
+],
+"answer": "0.4s",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.7.2 (a) (i)"
+},
+{
+"question": "What is the standard appliance wire colour for a phase conductor in a single phase AC circuit?",
+"options": [
+"Red",
+"Yellow",
+"Blue",
+"Brown"
+],
+"answer": "Brown",
+"reference": "AS/NZS 3000:2007, Section 3, Figure 3.2"
+},
+{
+"question": "What is the IP rating for equipment that is protected against dust ingress and low-pressure water jets?",
+"options": [
+"IP54",
+"IP65",
+"IP67",
+"IP44"
+],
+"answer": "IP65",
+"reference": "AS/NZS 3000:2007, Appendix G, Figure G1"
+},
+{
+"question": "What is the minimum depth of cover for a cable buried within the confines of a building in a Cat B system?",
+"options": [
+"300mm",
+"450mm",
+"500mm",
+"600mm"
+],
+"answer": "500mm",
+"reference": "AS/NZS 3000:2007, Section 3, Table 3.6"
+},
+{
+"question": "The 'Prospective Short-Circuit Current' (PSSC) is the highest current that can flow under:",
+"options": [
+"Overload conditions",
+"Short-circuit conditions",
+"Earth leakage conditions",
+"Normal operating conditions"
+],
+"answer": "Short-circuit conditions",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.4.43"
+},
+{
+"question": "Which type of circuit breaker is most suitable for a circuit with high inrush currents, like a motor?",
+"options": [
+"Type B",
+"Type C",
+"Type D",
+"Type A"
+],
+"answer": "Type D",
+"reference": "General Knowledge"
+},
+{
+"question": "What is the purpose of the 'adiabatic equation'?",
+"options": [
+"To calculate voltage drop",
+"To verify the thermal constraints of a conductor under fault conditions",
+"To determine the size of a main bonding conductor",
+"To calculate the required RCD rating"
+],
+"answer": "To verify the thermal constraints of a conductor under fault conditions",
+"reference": "General Knowledge"
+},
+{
+"question": "What does 'ADS' stand for in the context of protection against electric shock?",
+"options": [
+"Automatic Disconnection of Supply",
+"Additional Disconnection System",
+"Automatic Detection of Supply",
+"Active Disconnection of Supply"
+],
+"answer": "Automatic Disconnection of Supply",
+"reference": "General Knowledge"
+},
+{
+"question": "For a domestic lighting circuit, what is the most common rating for a protective device?",
+"options": [
+"3A",
+"6A",
+"10A",
+"16A"
+],
+"answer": "6A",
+"reference": "General knowledge"
+},
+{
+"question": "Which of the following is a requirement for socket outlets in a new domestic installation?",
+"options": [
+"Must be secondary switched",
+"Must have RCD protection",
+"Must be on a ring circuit",
+"Must be metal-clad"
+],
+"answer": "Must have RCD protection",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.3.1"
+},
+{
+"question": "What is the minimum cross-sectional area for a circuit protective earth conductor that is not part of a cable?",
+"options": [
+"1.5mm²",
+"2.5mm²",
+"4.0mm²",
+"6.0mm²"
+],
+"answer": "2.5mm²",
+"reference": "AS/NZS 3000:2007, Clause 5.3.3.4 (a)"
+},
+{
+"question": "What zone in a location containing a bath or shower requires other electrical equipment to be at least IPX7?",
+"options": [
+"Zone 0",
+"Zone 1",
+"Zone 2",
+"Outside the zones"
+],
+"answer": "Zone 0",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "An Electrical Safety Certificate can be issued for:",
+"options": [
+"An IR test",
+"An appliance test",
+"Maintaining a fitting to return it to it's original condition",
+"Resetting a MCB"
+],
+"answer": "Maintaining a fitting to return it to it's original condition",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 74A (1)"
+},
+{
+"question": "Which document provides statutory guidance on electrical safety in the New Zealand?",
+"options": [
+"AS/NZS 3001",
+"The On-Site Guide",
+"The Electrical Safety Regulations 2010",
+"The Building Regulations Schedule 2"
+],
+"answer": "The Electrical Safety Regulations 2010",
+"reference": "Electricity (Safety) Regulations 2010"
+},
+{
+"question": "What is the maximum permitted Zs for a 20A Type C circuit breaker?",
+"options": [
+"2.30Ω",
+"1.53Ω",
+"0.57Ω",
+"0.87Ω"
+],
+"answer": "1.53Ω",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1"
+},
+{
+"question": "The continuity of protective conductors is tested using which instrument?",
+"options": [
+"Insulation Resistance Tester",
+"Loop Impedance Tester",
+"Low Resistance Ohmmeter",
+"RCD Tester"
+],
+"answer": "Low Resistance Ohmmeter",
+"reference": "General Knowledge within AS/NZS 3000:2007, Clause 8.3.5.1 - 8.3.5.2"
+},
+{
+"question": "What is the minimum insulation resistance value for a 230V circuit without MIMS conductors?",
+"options": [
+"0.5 MΩ",
+"1.0 MΩ",
+"2.0 MΩ",
+"10.0 MΩ"
+],
+"answer": "1.0 MΩ",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.6.2"
+},
+{
+"question": "What colour indicates the neutral conductor in a domestic single-phase circuit?",
+"options": [
+"Black",
+"Grey",
+"Blue",
+"Brown"
+],
+"answer": "Black",
+"reference": "AS/NZS 3000:2007, Section 3, Table 3.4 - Note 4"
+},
+{
+"question": "What is the purpose of supplementary bonding?",
+"options": [
+"To connect all extraneous-conductive-parts mechanically",
+"To reduce earth fault-loop impedance by equipotential bonding",
+"To increase the size of the main earth",
+"It is no longer a requirement in most cases"
+],
+"answer": "To reduce earth fault-loop impedance by equipotential bonding",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.7.5"
+},
+{
+"question": "When testing a 30mA RCD, at what fault current should it NOT trip?",
+"options": [
+"1 x I∆n",
+"5 x I∆n",
+"1/2 x I∆n",
+"2 x I∆n"
+],
+"answer": "1/2 x I∆n",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24 - 3 (b)"
+},
+{
+"question": "What is the main characteristic of a TN-C-S earthing system?",
+"options": [
+"The neutral and protective conductors are totally separate",
+"The distribution system is directly connected to earth at the Neutral point of the Transformer",
+"The installation has its own dedicated isolation transformer",
+"The earth is provided by the supplier's neutral"
+],
+"answer": "The distribution system is directly connected to earth at the Neutral point of the Transformer",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.3.2"
+},
+{
+"question": "Which of these is NOT a method of fault protection?",
+"options": [
+"Double or reinforced insulation",
+"Automatic Disconnection of Supply",
+"Electrical Separation",
+"Basic Insulation"
+],
+"answer": "Basic Insulation",
+"reference": "General knowledge within AS/NZS 3000:2007, Section 1, Clause 1.5.5"
+},
+{
+"question": "What is the maximum route length of a 1.5mm² TPS cable on a Type C 10A circuit?",
+"options": [
+"50m",
+"82m",
+"100m",
+"89m"
+],
+"answer": "82m",
+"reference": "AS/NZS 3000:2007, Appendix B, Table B1"
+},
+{
+"question": "What is the purpose of a diversity factor?",
+"options": [
+"To account for different ambient temperatures",
+"To calculate the maximum demand of an installation",
+"To determine the grouping factor for cables",
+"To calculate voltage drop"
+],
+"answer": "To calculate the maximum demand of an installation",
+"reference": "General Knowledge"
+},
+{
+"question": "Which of the following locations would require RCD protection on all general power outlets?",
+"options": [
+"A domestic dwelling",
+"An industrial workshop",
+"A commercial kitchen",
+"A commercial office"
+],
+"answer": "A domestic dwelling",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.3.1"
+},
+{
+"question": "Polarity testing ensures that:",
+"options": [
+"The earth connection is continuous",
+"The insulation is sufficient",
+"Line conductors are connected to fuses/switches and the centre contact of ES lampholders",
+"The RCD trips correctly"
+],
+"answer": "Line conductors are connected to fuses/switches and the centre contact of ES lampholders",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.7.1 - Section 4, 4.5.1.2"
+},
+{
+"question": "What is the maximum permitted earth fault loop impedance for a 16A Type B circuit breaker?",
+"options": [
+"1.44Ω",
+"2.87Ω",
+"3.59Ω",
+"0.72Ω"
+],
+"answer": "3.59Ω",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1"
+},
+{
+"question": "PELV stands for:",
+"options": [
+"Protected Extra-Low Voltage",
+"Powered Extra-Low Voltage",
+"Primary Earth Low Voltage",
+"Potential Equalisation Low Voltage"
+],
+"answer": "Protected Extra-Low Voltage",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.4.76"
+},
+{
+"question": "A 'Type AC' RCD is designed to operate on:",
+"options": [
+"Alternating currents only",
+"Pulsating DC currents only",
+"Both AC and pulsating DC currents",
+"Smooth DC currents"
+],
+"answer": "Alternating currents only",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.2.2 Note 1(a)"
+},
+{
+"question": "What test is performed to verify the integrity of insulation between live conductors and earth?",
+"options": [
+"Continuity of Protective Earth Test",
+"Insulation Resistance Test",
+"Earth Loop Impedance Test",
+"Polarity Test"
+],
+"answer": "Insulation Resistance Test",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.6"
+},
+{
+"question": "What is the minimum separation distance between a gas pipe and an electrical cable?",
+"options": [
+"25mm",
+"50mm",
+"100mm",
+"160mm"
+],
+"answer": "25mm",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.9.8.4 (b)"
+},
+{
+"question": "What is the maximum permitted earth fault-loop impedance for a 6A HRC fuse supplying a final sub-circuit?",
+"options": [
+"7.28Ω",
+"8.74Ω",
+"11.5Ω",
+"9.2Ω"
+],
+"answer": "11.5Ω",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1"
+},
+{
+"question": "What is the maximum voltage for a SELV system?",
+"options": [
+"25V a.c.",
+"50V a.c.",
+"110V a.c.",
+"130V DC"
+],
+"answer": "50V a.c.",
+"reference": "AS/NZS 3000:2007, Clause 1.5.7 (a)"
+},
+{
+"question": "Which Section of AS/NZS 3000 deals with 'Special Electrical Installations'?",
+"options": [
+"Section 4",
+"Section 5",
+"Section 6",
+"Section 7"
+],
+"answer": "Section 7",
+"reference": "AS/NZS 3000:2007, Section 7"
+},
+{
+"question": "What is the test voltage for an insulation resistance test on a 230V circuit?",
+"options": [
+"230V DC",
+"250V DC",
+"500V DC",
+"1000V DC"
+],
+"answer": "500V DC",
+"reference": "AS/NZS 3000:2007, Clause 8.3.6.1"
+},
+{
+"question": "What is the meaning of 'IP2X'?",
+"options": [
+"Protection against fingers and objects >12.5mm",
+"Protection against dust",
+"Protection against dripping water",
+"Protection against tools and wires >2.5mm"
+],
+"answer": "Protection against fingers and objects >12.5mm",
+"reference": "AS/NZS 3000:2007, Appendix G, Table G1"
+},
+{
+"question": "The 'Zext' measurement is the earth fault loop impedance of:",
+"options": [
+"The external earth fault loop",
+"The internal earth fault loop",
+"The entire circuit",
+"The appliance"
+],
+"answer": "The external earth fault loop",
+"reference": "General Knowledge witin AS/NZS 3000:2007, Appendix B, Clause B4.4"
+},
+{
+"question": "According to the Electricity (Safety) Regulations 2010, which situation deems low-voltage fittings to be electrically unsafe?",
+"options": [
+"The unearthed conductive parts separated from live parts by no more than basic insulation",
+"Fittings intended to have a safety function and serving it",
+"Any fitting with more than 1 MΩ insulation resistance",
+"Fittings with double insulation rating"
+],
+"answer": "The unearthed conductive parts separated from live parts by no more than basic insulation",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 22 (a)"
+},
+{
+"question": "When a trainee completes work in an installation, what are the requirements for signing an electrical safety certificate?",
+"options": [
+"Trainee signs only",
+"Supervisor signs and dates, and provides their registration number",
+"Inspector signs only",
+"Any licensed electrical worker signs"
+],
+"answer": "Supervisor signs and dates, and provides their registration number",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 74A (3) f"
+},
+{
+"question": "According to AS/NZS 3000, in what situation may the protection disconnection time be greater than 0.4 s but not exceed 5 s?",
+"options": [
+"For final subcircuits ≤ 32 A",
+"For mains and submains",
+"For socket outlet circuits in bathrooms",
+"For RCD-protected circuits"
+],
+"answer": "For mains and submains",
+"reference": "General Knowledge within AS/NZS 3000:2007, Section 5, Clause 5.7.2 And Appendix B, Paragraph B4.4"
+},
+{
+"question": "According to AS/NZS 3000, every electrical installation shall be designed to…",
+"options": [
+"Avoid danger and maximize inconvenience in the event of a fault",
+"Facilitate safe operation, inspection, testing and maintenance",
+"Reduce energy consumption",
+"Eliminate the need for circuit protective devices"
+],
+"answer": "Facilitate safe operation, inspection, testing and maintenance",
+"reference": "AS/NZS 3000:2007, Clause 1.6.1 (e)"
+},
+{
+"question": "What is a requirement for electrical equipment in damp situations (AS/NZS 3000)?",
+"options": [
+"Provide additional protection against electric shock where water or humidity increases risk",
+"Provide adequate protection against damage from water or humidity",
+"Be installed only if IP67 rated",
+"Use SELV supply only"
+],
+"answer": "Provide additional protection against electric shock where water or humidity increases risk",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.7.4 (b)"
+},
+{
+"question": "According to AS/NZS 3000, what must be provided where unexpected restarting of a motor could cause danger?",
+"options": [
+"An RCD",
+"A means to prevent automatic restarting after stopping",
+"A surge protective device",
+"A secondary motor relay"
+],
+"answer": "A means to prevent automatic restarting after stopping",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.13.1.4"
+},
+{
+"question": "Which identification requirement applies to equipment on a switchboard (AS/NZS 3000)?",
+"options": [
+"All equipment must be legibly and indeliidentified in English",
+"Switchboard labels must not be indelible",
+"Relationship of switches, breakers, and RCDs to installation sections must not be marked",
+"Bars and links must be colour coded"
+],
+"answer": "All equipment must be legibly identified in English",
+"reference": "AS/NZS 3000:2007, Clause 2.9.5.1"
+},
+{
+"question": "Which type of pipe may NOT be used as earthing conductors (AS/NZS 3000)?",
+"options": [
+"Old pipes",
+"Gas pipes",
+"Conduits",
+"Downpipes"
+],
+"answer": "Gas pipes",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.2.2"
+},
+{
+"question": "Why must precautions be taken when testing a low-voltage electrical installation?",
+"options": [
+"To ensure the safety of persons",
+"To ensure damage to property and electrical installation equipment",
+"To prevent energy wastage",
+"To comply with AS/NZS 3012"
+],
+"answer": "To ensure the safety of persons",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.1.2"
+},
+{
+"question": "What must be verified when alterations or additions are made to an electrical installation (AS/NZS 3000)?",
+"options": [
+"They comply with AS/NZS 3000 and do not impair safety",
+"They improve energy efficiency",
+"They are tested for RCD compliance only",
+"They are inspected visually only"
+],
+"answer": "They comply with AS/NZS 3000 and do not impair safety",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.1.2"
+},
+{
+"question": "According to AS/NZS 3000, what is an over-temperature cut-out for an unvented water heater connected to?",
+"options": [
+"Directly in the circuit wiring to the heater elements",
+"Through relays only",
+"Through contactors only",
+"It is optional if the heater has a thermostat"
+],
+"answer": "Directly in the circuit wiring to the heater elements",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.8.2.2"
+},
+{
+"question": "What is a requirement for switching a stationary cooking appliance with open cooking surface (AS/NZS 3000)?",
+"options": [
+"Switch in neutral conductor only",
+"Mounted near and accessible",
+"Fitted with IP67 protection",
+"RCD-protected at the socket"
+],
+"answer": "Mounted near and accessible",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.7.1"
+},
+{
+"question": "According to AS/NZS 3000, what is a permitted method of connecting electrical equipment?",
+"options": [
+"Direct connection",
+"Installation coupler",
+"Socket outlet",
+"All of the above"
+],
+"answer": "All of the above",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.3"
+},
+{
+"question": "For a switch controlling two socket outlets, what is a current rating requirement (AS/NZS 3000)?",
+"options": [
+"Not less than half the current rating of the socket outlets",
+"The current rating of the protective device",
+"Not less than 32 A always",
+"Half the MCB rating"
+],
+"answer": "Not less than the current rating of the protective device",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.4.4.2"
+},
+{
+"question": "What is the minimum insulation resistance for a new LV installation (excluding fixed appliances like water heaters)?",
+"options": [
+"0.5 MΩ",
+"1.0 MΩ",
+"5.0 MΩ",
+"10.0 MΩ"
+],
+"answer": "1.0 MΩ",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.6.2"
+},
+{
+"question": "When testing insulation resistance on fixed appliances such as ovens and water heaters, what minimum value must be obtained?",
+"options": [
+"1.0 kΩ",
+"100 kΩ",
+"1.0 MΩ",
+"0.01 MΩ"
+],
+"answer": "0.01 MΩ",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.6.2 (i)"
+},
+{
+"question": "What is the maximum permitted voltage drop for a low-voltage installation under normal conditions (AS/NZS 3000)?",
+"options": [
+"4%",
+"5%",
+"7%",
+"10%"
+],
+"answer": "5%",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.6.2"
+},
+{
+"question": "According to the Electricity Act 1992, under what circumstances can an installation be connected to supply before testing and certification?",
+"options": [
+"Where the connection is solely for carrying out testing, inspection, or certification required by regulations",
+"Where the consumer requests early connection",
+"If the client approves verbally",
+"Any time before the Certificate of Compliance is issued"
+],
+"answer": "Where the connection is solely for carrying out testing, inspection, or certification required by regulations",
+"reference": "Electricity Act 1992, Section 82 (4)"
+},
+{
+"question": "One category of people whom the Electrical Workers Registration Board require to undertake a competence programme?",
+"options": [
+"Applicants for practising or provisional licences",
+"All low-risk electrical workers",
+"Registered inspectors only",
+"Electricity distributors only"
+],
+"answer": "Applicants for practising or provisional licences",
+"reference": "Electricity Act 1992, Section 85 - (1) (d)"
+},
+{
+"question": "How must a line function service provider protect a consumer’s installation against fault currents?",
+"options": [
+"Provide a service protective fitting of appropriate rating against short-circuits or earth faults on mains",
+"Ensure the consumer installs their own protective devices",
+"Install surge protection only",
+"Test for earth loop impedance"
+],
+"answer": "Provide a service protective fitting of appropriate rating against short-circuits or earth faults on mains",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 31 - (1)"
+},
+{
+"question": "Which type of low-voltage installation below must comply with Part 2 of AS/NZS 3000 (ESR)?",
+"options": [
+"Domestic installations with demand ≤ 80A per phase single-phase",
+"Any commercial aircraft",
+"Domestic installations with demand greater than 80A per phase single-phase",
+"Street lighting only"
+],
+"answer": "Domestic installations with demand ≤ 80A per phase single-phase",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 59 - (1) (a)"
+},
+{
+"question": "How must a common neutral in a switchboard be identified (AS/NZS 3000)?",
+"options": [
+"By permanent and legible marking to show associated active conductors",
+"By colour coding only",
+"By inspector approval",
+"By using larger cable size"
+],
+"answer": "By permanent and legible marking to show associated active conductors",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.2.1.2 - (c)"
+},
+{
+"question": "In what situation may live parts be exposed on an industrial switchboard (AS/NZS 3000)?",
+"options": [
+"When basic protection is provided by barriers in accordance with 1.5.4.4",
+"When the switchboard is installed outdoors",
+"Only in temporary installations",
+"Never under any circumstances"
+],
+"answer": "When basic protection is provided by barriers in accordance with 1.5.4.4",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.9.3.1 - 1"
+},
+{
+"question": "Where must a main switchboard be installed in relation to swimming pools (AS/NZS 3000)?",
+"options": [
+"Not above any classified zone",
+"Directly beside the pool",
+"Directly under sprinklers",
+"In Zone 0"
+],
+"answer": "Not in any classified zone",
+"reference": "AS/NZS 3000:2007, Section 6, Clause 6.2.4.6"
+},
+{
+"question": "What is a circumstance where LV cables can be installed in the same wiring system as ELV cables (AS/NZS 3000)?",
+"options": [
+"Where the LV cables are not of a type providing double insulation",
+"Where all conductors are insulated for the highest voltage present",
+"Where they are joined in junction boxes",
+"Only if separated by plastic tape"
+],
+"answer": "Where all conductors are insulated for the highest voltage present",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.9.8.3 - (b)"
+},
+{
+"question": "What is the required identification for a buried direct LV neutral-screen cable (AS/NZS 3000)?",
+"options": [
+"Labelling on ends of cable",
+"Record of the cable route on a plan at the switchboard",
+"Paint the ground above it",
+"Fit a circuit breaker at both ends"
+],
+"answer": "Record of the cable route on a plan at the switchboard",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.11.4.6 - (b)"
+},
+{
+"question": "Where must the ends of a main earthing conductor be connected in a MEN installation (AS/NZS 3000)?",
+"options": [
+"Main earth bar and electrode",
+"To the switchboard neutral only",
+"To the main protective device",
+"To the distributor’s transformer"
+],
+"answer": "Main earth bar and electrode",
+"reference": "AS/NZS 3000:2007, General Knowledge within Section 5, Clause 5.3.3.2"
+},
+{
+"question": "What is the minimum length of a caravan supply lead (AS/NZS 3001)?",
+"options": [
+"5 m",
+"7.5 m",
+"10 m",
+"15 m"
+],
+"answer": "10 m",
+"reference": "AS/NZS 3001:2008, Clause 5.1.3"
+},
+{
+"question": "How must earth continuity of socket outlets in a caravan be verified (AS/NZS 3001)?",
+"options": [
+"By ensuring effective continuity from the supply lead plug earth pin to each outlet earth pin",
+"By testing with a neon tester only",
+"By visual inspection",
+"Not required if RCD protected"
+],
+"answer": "By ensuring effective continuity from the supply lead plug earth pin to each outlet earth pin",
+"reference": "AS/NZS 3001:2008, Appendix C, C7.5"
+},
+{
+"question": "What is one requirement for caravan supply lead plugs (AS/NZS 3001)?",
+"options": [
+"Must comply with IEC 60309 with minimum 16A rating",
+"Can be any household plug",
+"Must always be 32 A rated",
+"Not regulated"
+],
+"answer": "Must comply with IEC 60309 with minimum 16A rating",
+"reference": "AS/NZS 3001:2008, Section 5, Clause 5.1.2 (b) (iii)"
+},
+{
+"question": "What is ONE requirement that applies when issuing a warrant of electrical fitness (ESR)?",
+"options": [
+"Issued in accordance with AS/NZS 3001",
+"Written on white parchment",
+"Copy kept for 10 years",
+"Sticker affixed on chassis",
+"Only Electrician signs off"
+],
+"answer": "Issued in accordance with AS/NZS 3001",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 78 (2)"
+},
+{
+"question": "What installation method protects lamp holders against inadvertent contact (AS/NZS 3000)?",
+"options": [
+"Installed ≥1.8 m above ground/floor",
+"Provision of suitable ground wire",
+"Always IP67",
+"Installed with RCD"
+],
+"answer": "Installed ≥1.8 m above ground/floor",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.5.1.1 (i)"
+},
+{
+"question": "How must the neutral conductor be connected in an Edison screw lampholder (AS/NZS 3000)?",
+"options": [
+"Neutral to outer contact",
+"Neutral to centre pin",
+"Neutral not required",
+"Either terminal is acceptable"
+],
+"answer": "Neutral to outer contact",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.5.1.2"
+},
+{
+"question": "What is a risk recessed luminaires must be installed to prevent (AS/NZS 3000)?",
+"options": [
+"Excessive temperature rise",
+"Fire from parked vehicles",
+"Water ingress",
+"Incorrect polarity"
+],
+"answer": "Excessive temperature rise",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.5.2.3.1 (a) (i)"
+},
+{
+"question": "What is the minimum size of aluminium aerial conductor and strand requirement (AS/NZS 3000)?",
+"options": [
+"7 strands, 16 mm²",
+"19 strands, 25 mm²",
+"7 strands, 10 mm²",
+"16 strands, 25 mm²"
+],
+"answer": "7 strands, 16 mm²",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.12.2.2 (a)"
+},
+{
+"question": "According to AS/NZS 3000, what is a required characteristic of short-circuit protective devices?",
+"options": [
+"Breaking capacity ≥ prospective short-circuit current at point of installation",
+"Must interrupt fault current after conductors exceed permissible temperature",
+"Provide earth leakage protection",
+"Must always be RCD type"
+],
+"answer": "Breaking capacity ≥ prospective short-circuit current at point of installation",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.5.4.5 (a)"
+},
+{
+"question": "What is the maximum disconnection time permitted for a gG HRC fuse on a sub-main if an earth fault of negligible impedance occurs (AS/NZS 3000)?",
+"options": [
+"0.4 s",
+"1.0 s",
+"5.0 s",
+"10.0 s"
+],
+"answer": "5.0 s",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.7.2 - (b)"
+},
+{
+"question": "According to AS/NZS 3000, pick one situation where RCD protection must be provided in a new domestic electrical installation?",
+"options": [
+"Socket-outlet final subcircuits",
+"Installtion mains wiring",
+"Directly connected Hot water cylinder",
+"Distribution submains"
+],
+"answer": "Socket-outlet final subcircuits",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.3.1 (a)"
+},
+{
+"question": "Under what circumstances may a main switchboard be installed in a location exposed to water splashing or steam (AS/NZS 3000)?",
+"options": [
+"Only when installed outdoors",
+"If provided with a suitable enclosure or in a cupboard with close-fitting doors",
+"Never permitted",
+"Only with inspector's approval"
+],
+"answer": "If provided with a suitable enclosure or in a cupboard with close-fitting doors",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.9.2.5 (b)"
+},
+{
+"question": "What is the minimum degree of protection required for a main switchboard installed in a sanitisation or hosing-down area (AS/NZS 3000)?",
+"options": [
+"IPX4",
+"IPX5",
+"IPX6",
+"IPX7"
+],
+"answer": "IPX6",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.9.2.5 (g)"
+},
+{
+"question": "What is the minimum voltage permitted at the terminals of a single-phase hot water cylinder 12 m from the switchboard, supplied at 230 V (AS/NZS 3000)?",
+"options": [
+"218.5 V",
+"220 V",
+"225 V",
+"230 V"
+],
+"answer": "218.5 V",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.6.2 (5% voltage drop rule)"
+},
+{
+"question": "Which installation category may be used for underground burial of a 25 mm² served MIMS cable (AS/NZS 3000 Table 3.5)?",
+"options": [
+"Category A, Category B, Category C",
+"Category B, Category C",
+"Category C",
+"Category D"
+],
+"answer": "Category A, Category B, Category C",
+"reference": "AS/NZS 3000:2007, Sectoin 3, Table 3.5"
+},
+{
+"question": "What is the minimum burial depth for a Category B installation without concrete cover external to a building (AS/NZS 3000)?",
+"options": [
+"300 mm",
+"375 mm",
+"500 mm",
+"575 mm"
+],
+"answer": "500 mm",
+"reference": "AS/NZS 3000:2007, Section 3, Table 3.6"
+},
+{
+"question": "What is the minimum burial depth for a Category B installation with 90 mm concrete cover external to a building (AS/NZS 3000)?",
+"options": [
+"300 mm",
+"375 mm",
+"500 mm",
+"575 mm"
+],
+"answer": "300 mm",
+"reference": "AS/NZS 3000:2007, Section 3, Table 3.6"
+},
+{
+"question": "Name a cable type that may be buried direct in the ground without mechanical protection (AS/NZS 3000).",
+"options": [
+"Armoured sheathed cables",
+"Standard flat TPS cables",
+"Single-insulated TPS",
+"Bare copper"
+],
+"answer": "Armoured sheathed cables",
+"reference": "AS/NZS 3000:2007, Section 3, Table 3.5"
+},
+{
+"question": "Which fittings must form part of the MEN protective earthing arrangement (AS/NZS 3000)?",
+"options": [
+"Main earthing conductor",
+"Protective earthing conductors connecting exposed conductive parts",
+"MEN link connection",
+"All of the above"
+],
+"answer": "All of the above",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.1"
+},
+{
+"question": "What is a permitted supply arrangement for a 230 V socket outlet in Zone 3 of a shower area (AS/NZS 3000)?",
+"options": [
+"Protected by a 30 mA RCD",
+"Individually supplied as a monitored earth",
+"Supplied via a silicon controlled rectifier (SCR)",
+"Not permitted at all"
+],
+"answer": "Protected by a 30 mA RCD",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "What is ONE requirement relating to discrimination of protective devices where safety services are installed (AS/NZS 3000)?",
+"options": [
+"Safety service fault will affect other safety services",
+"Fault in general installation must not disconnect safety services",
+"All protective devices must be RCDs",
+"Lower rating is closer to supply"
+],
+"answer": "Fault in general installation must not disconnect safety services",
+"reference": "AS/NZS 3000:2007, Section 7, Clause 7.2.2.2 (b)"
+},
+{
+"question": "What is the main difference between SELV and PELV circuits (AS/NZS 3000)?",
+"options": [
+"SELV has no connection to earth; PELV has one point earthed",
+"PELV has no earth; SELV has one point earthed",
+"SELV requires RCD; PELV does not",
+"They are identical"
+],
+"answer": "SELV has no connection to earth; PELV has one point earthed",
+"reference": "AS/NZS 3000:2007, Section 1, Clauses 1.4.76 & 1.4.83"
+},
+{
+"question": "What is the minimum approach distance for a non-competent person working near 11 kV overhead lines (NZECP 34)?",
+"options": [
+"1.0 m",
+"1.5 m",
+"3.0 m",
+"4.0 m"
+],
+"answer": "4.0 m",
+"reference": "NZECP 34:2013, Table 2"
+},
+{
+"question": "What is the minimum approach distance for a competent person working near 11 kV overhead lines with written consent (NZECP 34)?",
+"options": [
+"0.3 m",
+"0.5 m",
+"1.0 m",
+"1.5 m"
+],
+"answer": "1.0 m",
+"reference": "NZECP 34:2013, Table 2"
+},
+{
+"question": "According to AS/NZS 3000, what is the maximum motor rating that does not require overload protection?",
+"options": [
+"250 W",
+"370 W",
+"500 W",
+"750 W"
+],
+"answer": "370 W",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.13.2"
+},
+{
+"question": "According to AS/NZS 3000, when may functional switching be used?",
+"options": [
+"Where operational control only is required, not for safety reasons",
+"For emergency isolation",
+"Only for water heaters",
+"Never"
+],
+"answer": "Where operational control only is required, not for safety reasons",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.7.1"
+},
+{
+"question": "What is the required touch-voltage limit in low-voltage MEN systems before disconnection must occur (AS/NZS 3000)?",
+"options": [
+"25 V",
+"50 V",
+"110 V",
+"230 V"
+],
+"answer": "50 V",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.5.5.3 (b)"
+},
+{
+"question": "What is the maximum disconnection time for socket outlet final subcircuits up to 63 A (AS/NZS 3000)?",
+"options": [
+"0.2 s",
+"0.4 s",
+"1.0 s",
+"5.0 s"
+],
+"answer": "0.4 s",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.5.5.3 (d)"
+},
+{
+"question": "What is the minimum copper equipotential bonding conductor size for metallic water piping when the largest mains conductor is 35 mm² (AS/NZS 3000)?",
+"options": [
+"2.5 mm²",
+"4 mm²",
+"6 mm²",
+"10 mm²"
+],
+"answer": "4 mm²",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.6.3.2 (a)"
+},
+{
+"question": "Which types of luminaires do NOT require a protective earthing conductor (AS/NZS 3000)?",
+"options": [
+"Double insulated light fitting",
+"Class II luminaires",
+"ELV in accordance with clause 7.5",
+"All of the above"
+],
+"answer": "All of the above",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.4.4 (a)"
+},
+{
+"question": "Which situation is specifically deemed to make installations electrically unsafe under the Electricity (Safety) Regulations 2010?",
+"options": [
+"Fittings are installed in a dry, ventilated cupboard",
+"Fittings are installed so that designed cooling conditions are impaired",
+"Fittings are labelled with their IP rating",
+"Fittings are supplied from a SELV source"
+],
+"answer": "Fittings are installed so that designed cooling conditions are impaired",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 20 - (2) (e)"
+},
+{
+"question": "Which appliance is NOT electrically unsafe even though injury could result, under ESR 2010?",
+"options": [
+"An oven with a faulty door switch",
+"Electrical appliances designed and used for patient treatment",
+"A portable drill with damaged cord grip",
+"A luminaire with exposed live parts"
+],
+"answer": "Electrical appliances designed and used for patient treatment",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 23 - (2)"
+},
+{
+"question": "A fitting without a current AS/NZS 3760 tag can still be deemed electrically safe if which condition is met?",
+"options": [
+"It is supplied through a portable or installation RCD providing shock protection",
+"It is new-in-box from any retailer",
+"It has a manufacturer’s brochure",
+"It is visually inspected only"
+],
+"answer": "It is supplied through a portable or installation RCD providing shock protection",
+"reference": "ESR regulation 26 - (3) (b) and AS/NZS 3760 context, Clause 1.2.1.2"
+},
+{
+"question": "Who may NOT inspect prescribed electrical work?",
+"options": [
+"A person who personally carried out the work",
+"An electrical inspector competent for the installation type",
+"A person who holds the appropriate authorization",
+"All of these"
+],
+"answer": "A person who personally carried out the work",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 71 (2) (a)"
+},
+{
+"question": "Before hiring out a caravan, what document must exist?",
+"options": [
+"Electrical Installation Certificate",
+"Warrant of Electrical Fitness",
+"Certificate of Verification",
+"Electrical Safety Certificate"
+],
+"answer": "Warrant of Electrical Fitness",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 77 - (1)"
+},
+{
+"question": "Who can issue a warrant of electrical fitness for a caravan?",
+"options": [
+"An EAS endorsed electrical worker",
+"A person authorized to inspect mains work",
+"The caravan owner",
+"Only a registered inspector"
+],
+"answer": "A person authorized to inspect mains work",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 78 - (1) (a)"
+},
+{
+"question": "For earthing conductors, which termination is permitted for a tunnel-type terminal in AS/NZS 3000?",
+"options": [
+"A single screw with diameter 50% of tunnel diameter",
+"Conductor clamped by suitable ferrules or plates in direct contact",
+"Twisted conductors without a screw",
+"Push-in spring clamp with no screw or ferrule"
+],
+"answer": "Conductor clamped by suitable ferrules or plates in direct contact",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.7.2.11 (iii)"
+},
+{
+"question": "Which is an acceptable method to obtain the current value for voltage drop calculations in a final subcircuit (AS/NZS 3000)?",
+"options": [
+"Estimate 75% of the protective device rating",
+"Use the maximum demand of the circuit",
+"Always use nameplate current of the largest load",
+"Use 1.5 × rated current"
+],
+"answer": "Use the maximum demand of the circuit",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.6.2 (b)"
+},
+{
+"question": "Why is orange underground-cable marker tape installed (AS/NZS 3000)?",
+"options": [
+"To improve heat dissipation",
+"For early detection of underground wiring during excavation",
+"To increase mechanical protection",
+"To meet IP rating requirements"
+],
+"answer": "For early detection of underground wiring during excavation",
+"reference": "AS/NZS 3000:2007, Clause 3.11.4.5"
+},
+{
+"question": "A 230 V 2.5 mm² TPS socket-outlet circuit has combined phase+earth resistance of 1.95 Ω. Which protective device type and rating is suitable according to AS/NZS 3000?",
+"options": [
+"16 A Type B MCB",
+"20 A Type C MCB",
+"32 A Type C MCB",
+"6 A HRC fuse"
+],
+"answer": "16 A Type B MCB",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1 (Zs limit for 16A Type B is 3.59Ω. 1.95Ω is less than this.)"
+},
+{
+"question": "If an EFLI test is 1.84 Ω and the circuit is protected by an HRC fuse with maximum 0.4 s operating time, what is the maximum fuse rating permitted?",
+"options": [
+"16 A",
+"20 A",
+"25 A",
+"32 A"
+],
+"answer": "20 A",
+"reference": "AS/NZS 3000:2007, Section 8, Table 8.1"
+},
+{
+"question": "Minimum vertical clearance for a 230 V insulated sub-main crossing a pedestrian-only footpath (No vehicle access) (NZECP 34)?",
+"options": [
+"2.2 m",
+"2.4 m",
+"2.7 m",
+"3.0 m"
+],
+"answer": "2.7 m",
+"reference": "NZECP 34:2013, Table 4"
+},
+{
+"question": "Minimum vertical clearance for a 230 V insulated sub-main crossing a driveway (NZECP 34)?",
+"options": [
+"4.6 m",
+"5.0 m",
+"5.5 m",
+"6.0 m"
+],
+"answer": "5.5 m",
+"reference": "NZECP 34:2013, Table 2"
+},
+{
+"question": "Earth fault-loop impedance is defined as the impedance of the loop comprising the return conductor, the source, the active conductor up to:",
+"options": [
+"The main earthing bar",
+"The protective device",
+"The point of earth fault",
+"The supply transformer star point"
+],
+"answer": "The point of earth fault",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.7.4"
+},
+{
+"question": "Why must the earth fault-loop impedance be low?",
+"options": [
+"To minimize voltage drop in normal operation",
+"To ensure automatic disconnection within the required time under fault conditions",
+"To limit touch current during insulation resistance testing",
+"To reduce prospective short-circuit current"
+],
+"answer": "To ensure automatic disconnection within the required time under fault conditions",
+"reference": "AS/NZS 3000:2007, General knowledge within Appendix B"
+},
+{
+"question": "Which is a condition for using aluminium as a main earthing conductor (AS/NZS 3000)?",
+"options": [
+"May be installed underground in damp conditions",
+"Must be at least 6 mm² and solid",
+"Minimum 16 mm² for main earthing conductors and care to prevent corrosion",
+"Only permitted for supplementary bonding"
+],
+"answer": "Minimum 16 mm² for main earthing conductors and care to prevent corrosion",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.2.1.2"
+},
+{
+"question": "What material/type is specified for copper earthing conductors (AS/NZS 3000)?",
+"options": [
+"High-conductivity copper",
+"Tinned steel only",
+"Any metallic conductor",
+"Solid copper only, any size"
+],
+"answer": "High-conductivity copper",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.2.1.1"
+},
+{
+"question": "Which is a valid method of achieving isolation on a switchboard (AS/NZS 3000)?",
+"options": [
+"RCD test button",
+"Switch-disconnector (isolator)",
+"Voltage presence indicator",
+"Pilot light switch"
+],
+"answer": "Switch-disconnector (isolator)",
+"reference": "General Knowledge within AS/NZS 3000:2007, Section 1, Clause 1.5.2"
+},
+{
+"question": "In multi-occupancy premises, which requirement applies to isolation switches (AS/NZS 3000)?",
+"options": [
+"One main switch total for the building only",
+"Each occupier shall have ready access to an isolating switch that isolates their portion",
+"All isolation must be at the main switchboard only",
+"A key-switch is mandatory for each tenancy"
+],
+"answer": "Each occupier shall have ready access to an isolating switch that isolates their portion",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.3.3.3 (b)"
+},
+{
+"question": "Protection by automatic disconnection of supply is intended to limit which hazard?",
+"options": [
+"Prospective short-circuit current",
+"Prospective touch voltage under fault conditions",
+"Overload heating",
+"Electromagnetic interference"
+],
+"answer": "Prospective touch voltage under fault conditions",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.4.2"
+},
+{
+"question": "A device used for automatic disconnection of supply must NOT:",
+"options": [
+"Be manually operable",
+"Carry its full-load current",
+"Be capable of automatically reclosing",
+"Indicate ON/OFF state"
+],
+"answer": "Be capable of automatically reclosing",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.4.3"
+},
+{
+"question": "Which devices can provide automatic disconnection of supply according to AS/NZS 3000?",
+"options": [
+"Miniature overcurrent circuit-breakers to AS/NZS 60898",
+"Unenclosed fuse links to IEC55344",
+"Mouldy case circuit breakers to IEC 2022",
+"Pilot relays to in accordance with IEC 2048"
+],
+"answer": "Miniature overcurrent circuit-breakers to AS/NZS 60898",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.4.3"
+},
+{
+"question": "What is one sizing requirement for the MEN link at the MEN switchboard (AS/NZS 3000)?",
+"options": [
+"Not less than 2.5 mm²",
+"Not less than the current-carrying capacity of the main neutral conductor",
+"Equal to the largest phase conductor size",
+"Always 16 mm²"
+],
+"answer": "Not less than the current-carrying capacity of the main neutral conductor",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.3.5.2 (a)"
+},
+{
+"question": "Which wiring enclosure is permitted for insulated unsheathed cables (AS/NZS 3000)?",
+"options": [
+"Open cable tray with no cover",
+"Rigid or flexible insulating conduit to AS/NZS 2053",
+"Barely supported catenary wire",
+"Behind drywall with no conduit"
+],
+"answer": "Rigid or flexible insulating conduit to AS/NZS 2053",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.10.1.1 and 3.10.2.1"
+},
+{
+"question": "How must a change of wiring enclosures be made (AS/NZS 3000)?",
+"options": [
+"By simply overlapping conduits",
+"By a device that protects the insulation and maintains continuity of conductive enclosures",
+"By taping the joint",
+"No special method is required"
+],
+"answer": "By a device that protects the insulation and maintains continuity of conductive enclosures",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.10.2.2 (b)"
+},
+{
+"question": "Conductors that form part of different electrical installations shall:",
+"options": [
+"Be installed together for neatness",
+"Not be installed in the same wiring enclosure or multicore cable",
+"Share a common neutral bar",
+"Be separated by insulating tape only"
+],
+"answer": "Not be installed in the same wiring enclosure or multicore cable",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.9.8.2 (a)"
+},
+{
+"question": "Low-voltage track systems must be supported so that (choose the TRUE requirement set):",
+"options": [
+"Supports at ≤3 m intervals; any design acceptable; no sag permitted",
+"Supports of appropriate design; spaced ≤1.5 m; arranged to prevent sag/undue stress",
+"Supports only at the ends; sag is acceptable; spacing not specified",
+"Cable ties every 2 m are sufficient"
+],
+"answer": "Supports of appropriate design; spaced ≤1.5 m; arranged to prevent sag/undue stress",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.9.7.5 (c) (i) (ii) (iii)"
+},
+{
+"question": "Where are wiring systems likely to be disturbed (AS/NZS 3000)?",
+"options": [
+"Inside sealed switchboards only",
+"Above suspended ceilings with no access",
+"On the surface of a wall",
+"Within cast concrete slabs"
+],
+"answer": "On the surface of a wall",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.9.3.3 (a)"
+},
+{
+"question": "Which statement about Certificates of Compliance (CoC) is TRUE under ESR 2010?",
+"options": [
+"A CoC may not be issued for any prescribed work",
+"A CoC must include statements that the work was done lawfully/safely and the information is correct",
+"A CoC is optional for mains work",
+"A CoC must always be accompanied by an EWRB audit report"
+],
+"answer": "A CoC must include statements that the work was done lawfully/safely and the information is correct",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 66 - (1) (a) (i) (ii)"
+},
+{
+"question": "For electrical safety certificates (ESC), completion is taken as:",
+"options": [
+"The date the invoice is issued",
+"When the installation is connected to supply (or work completed if not disconnected)",
+"When the inspector signs the RoI",
+"When the distributor energizes the service"
+],
+"answer": "When the installation is connected to supply (or work completed if not disconnected)",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 74A - (2)"
+},
+{
+"question": "Polarity testing is intended to prevent which situation (AS/NZS 3000)?",
+"options": [
+"RCD nuisance tripping",
+"Transposition leading to exposed parts becoming energised",
+"EMC interference",
+"Overvoltage on lighting circuits"
+],
+"answer": "Transposition leading to exposed parts becoming energised",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.7.1 (b)"
+},
+{
+"question": "Which instrument/equipment combination is appropriate for live polarity testing at mains?",
+"options": [
+"Megohmmeter only",
+"Voltage tester, temporary earth, and trailing lead",
+"Loop impedance tester only",
+"Tong tester and proving unit"
+],
+"answer": "Voltage tester, temporary earth, and trailing lead",
+"reference": "General knowledge within AS/NZS 3000:2007, Section 8"
+},
+{
+"question": "Swimming pool zones require what minimum IP ratings for any types of equipment (AS/NZS 3000)?",
+"options": [
+"Zone 0 IPX7; Zone 1 IPX4; Zone 2 IPX2",
+"Zone 0 IPX8; Zone 1 IPX5; Zone 2 IPX4",
+"Zone 0 IPX8; Zone 1 IPX6; Zone 2 IPX5",
+"Zone 0 IPX7; Zone 1 IPX5; Zone 2 IPX4"
+],
+"answer": "Zone 0 IPX8; Zone 1 IPX5; Zone 2 IPX4",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.2"
+},
+{
+"question": "What is the minimum distance from pool edge for general-use 230 V socket-outlets (AS/NZS 3000)?",
+"options": [
+"1.0 m",
+"1.5 m",
+"2.0 m",
+"2.5 m"
+],
+"answer": "2.0 m",
+"reference": "AS/NZS 3000:2007, Section 6, Zone 2 starts 2m from the edge of the pool - Clause 6.3.4.3 (c) and figure 6.12"
+},
+{
+"question": "Which protection is required for zone 2 pool-area socket-outlets?",
+"options": [
+"30 mA RCD or individually supplied separated circuit",
+"100 mA RCD or SELV only",
+"Double-pole switching only",
+"Overload protection only"
+],
+"answer": "30 mA RCD or individually supplied separated circuit",
+"reference": "AS/NZS 3000:2007, Section 6, Clause 6.3.4.3 (c) (iii)"
+},
+{
+"question": "In Zone 1 of a swimming pool, which types of 230 V appliances are permitted when IPX5 is achieved?",
+"options": [
+"Class I fixed equipment (no RCD) only",
+"Class II equipment fixed in position and Class I fixed with RCD protection",
+"Portable Class I tools only",
+"Any appliance if behind a door"
+],
+"answer": "Class II equipment fixed in position and Class I fixed with RCD protection",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.2"
+},
+{
+"question": "Calculate the total voltage drop allowed for a 230 V circuit where the limit is 2.5%:",
+"options": [
+"3.25 V",
+"5.75 V",
+"9.2 V",
+"11.5 V"
+],
+"answer": "5.75 V",
+"reference": "General knowledge within AS/NZS 3000 context (2.5% of 230V = 5.75V)"
+},
+{
+"question": "Under ESR 2010, which situation deems a low voltage fitting electrically unsafe BEFORE installation?",
+"options": [
+"Fitting has double insulation only",
+"Unearthed conductive parts are separated from live parts by only basic insulation",
+"The fitting is labelled CE",
+"It is supplied with test certificate"
+],
+"answer": "Unearthed conductive parts are separated from live parts by only basic insulation",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 22 (a)"
+},
+{
+"question": "According to ESR 2010, what is the maximum operating time permitted for an RCD installed for the protection of property at rated residual current?",
+"options": [
+"1.0 s",
+"0.5 s",
+"0.15 s",
+"0.05 s"
+],
+"answer": "0.5 s",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24 (4) (a) (i)"
+},
+{
+"question": "According to ESR 2010, what is the maximum rated residual current permitted for a property-protection RCD?",
+"options": [
+"30 mA",
+"100 mA",
+"300 mA",
+"500 mA"
+],
+"answer": "300 mA",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24 (4) (b)"
+},
+{
+"question": "When carrying out alterations/additions to part of an installation, what is the requirement for the unaffected part (AS/NZS 3000)?",
+"options": [
+"The remaining installation must be rewired with TPS",
+"The alteration must not impair the safety of the existing installation",
+"Only insulation resistance must be rechecked",
+"No verification is necessary"
+],
+"answer": "The alteration must not impair the safety of the existing installation",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.1.2"
+},
+{
+"question": "When can maximum demand be determined by assessment (AS/NZS 3000)?",
+"options": [
+"When the installation is small and simple",
+"Where the installation is large/complex or has fluctuating/intermittent loads, or special occupancy",
+"Always for socket outlet circuits",
+"When specified by inspector only"
+],
+"answer": "Where the installation is large/complex or has fluctuating/intermittent loads, or special occupancy",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.2.2 (b)"
+},
+{
+"question": "For buried submain cable, what must be installed during installation?",
+"options": [
+"Orange marker tape",
+"Plastic ducting only",
+"Warning signs every 10 m",
+"Steel conduit"
+],
+"answer": "Orange marker tape",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.11.4.5"
+},
+{
+"question": "After burying a direct-laid submain, what is ONE method of indicating position (AS/NZS 3000)?",
+"options": [
+"Chalk markings on footpath",
+"An as-built plan at the origin switchboard",
+"Spray paint line on grass",
+"Mark on nearest pole"
+],
+"answer": "An as-built plan at the origin switchboard",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.11.4.6 (b)"
+},
+{
+"question": "Capacitors connected in parallel with an individual appliance must be installed so that:",
+"options": [
+"A switch or fuse is between the capacitor and appliance",
+"The appliance windings form a permanent discharge path for the capacitor",
+"They are isolated from appliance control gear",
+"They are mounted at least 2 m above floor"
+],
+"answer": "The appliance windings form a permanent discharge path for the capacitor",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.15.3.2 (a)"
+},
+{
+"question": "In bathrooms, RCD protection for socket-outlets is required when they are installed in which zones?",
+"options": [
+"Zone 0 only",
+"Zone 1 and Zone 2 only",
+"Zone 2 or Zone 3",
+"No RCD required if IPX5"
+],
+"answer": "Zone 2 or Zone 3",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "What is a requirement for overcurrent protection for extra-low voltage circuits where supply is earthed at point of supply (AS/NZS 3000):",
+"options": [
+"Devices must be installed in all unearthed conductors",
+"No protection required",
+"RCD only",
+"ELV circuits never require protection"
+],
+"answer": "Devices must be installed in all unearthed conductors",
+"reference": "AS/NZS 3000:2007, Section 7, Clause 7.5.9.1"
+},
+{
+"question": "Which is an example of a defined hazardous area (AS/NZS 3000)?",
+"options": [
+"Kitchen with electric hob",
+"Bathroom Zone 1",
+"Explosive gas atmosphere present",
+"Switchboard cupboard"
+],
+"answer": "Explosive gas atmosphere present",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.4.11"
+},
+{
+"question": "One part of automatic disconnection of supply, can be achieved by which method (AS/NZS 3000)?",
+"options": [
+"Equipotential bonding connecting exposed parts to PE conductor and mcb",
+"Earthing electrodes only",
+"Using double insulation",
+"Voltage indicators"
+],
+"answer": "Equipotential bonding connecting exposed parts to PE conductor and mcb",
+"reference": "AS/NZS 3000:2007, Section 1, Clause 1.5.5.3 (a) (i) (ii)"
+},
+{
+"question": "Which requirement applies to protective earthing conductor impedance (AS/NZS 3000)?",
+"options": [
+"Shall be low enough to operate protective device in required time",
+"No more than 0.5 ohms always",
+"Must be less than 1 Ω always",
+"Not relevant"
+],
+"answer": "Shall be low enough to operate protective device in required time",
+"reference": "AS/NZS 3000:2007, Section 8, Clause 8.3.5.2 (a)"
+},
+{
+"question": "In an Earth Fault-Loop Impedance (EFLI) test, which path is measured (AS/NZS 3000)?",
+"options": [
+"From active to neutral only",
+"From point of fault through active, neutral, MEN and PE back to transformer",
+"From socket to main switch only",
+"From active to earth electrode only"
+],
+"answer": "From point of fault through active, neutral, MEN and PE back to transformer",
+"reference": "AS/NZS 3000:2007, Appendix B, Paragraph B4.4 & Figure B5"
+},
+{
+"question": "What IP rating is required for luminaires installed in Zone 1 of a communal shower (AS/NZS 3000)?",
+"options": [
+"IPX2",
+"IPX4",
+"IPX5",
+"IPX7"
+],
+"answer": "IPX5",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "What IP rating is required for socket-outlets in Zone 3 of a bathroom (AS/NZS 3000)?",
+"options": [
+"IPX2",
+"IPX4",
+"No IP Rating",
+"IPX7"
+],
+"answer": "No IP Rating",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "Which protection is required for socket-outlets in Zone 3 of a shower (AS/NZS 3000)?",
+"options": [
+"30 mA RCD OR supplied by separated supply",
+"100 mA RCD only",
+"Fuse only",
+"Double insulation only"
+],
+"answer": "30 mA RCD OR supplied by separated supply",
+"reference": "AS/NZS 3000:2007, Section 6, Table 6.1"
+},
+{
+"question": "Which TWO types of final subcircuits in a new domestic installation must have RCD protection per AS/NZS 3000?",
+"options": [
+"Lighting and socket-outlet final subcircuits",
+"Cooker and water heater circuits",
+"HV circuits and mains",
+"Submains and data circuits"
+],
+"answer": "Lighting and socket-outlet final subcircuits",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.3.1 (a) and (b)"
+},
+{
+"question": "At 5× rated residual current, what is the maximum operating time for a property-protection RCD per ESR 2010?",
+"options": [
+"0.04 s",
+"0.15 s",
+"0.5 s",
+"1.0 s"
+],
+"answer": "0.15 s",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24 - (4) (a) (ii)"
+},
+{
+"question": "What is the maximum rated residual current for a Patient treatment area RCD (ESR 2010)?",
+"options": [
+"30 mA",
+"10 mA",
+"300 mA",
+"500 mA"
+],
+"answer": "10 mA",
+"reference": "Electricity (Safety) Regulations 2010, Regulation 24 (5) (a)"
+},
+{
+"question": "After burying a direct-laid submain, which method is acceptable to indicate its route?",
+"options": [
+"Spray paint line on grass",
+"Permanent cable marker signs at entries/exits or an as-built plan at the origin switchboard",
+"Chalk arrows on walls",
+"GPS-only record"
+],
+"answer": "Permanent cable marker signs at entries/exits or an as-built plan at the origin switchboard",
+"reference": "AS/NZS 3000:2007, Section 3, Clause 3.11.4.6"
+},
+{
+"question": "A connection to an earth electrode for a main earthing conductor must:",
+"options": [
+"Be submerged in water",
+"Be accessible for visual inspection and testing",
+"Use aluminium lugs only",
+"Be made with soldered joints only"
+],
+"answer": "Be accessible for visual inspection and testing",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.5.1.2 (a)"
+},
+{
+"question": "For an earthed ELV system, where shall overcurrent protective devices be installed?",
+"options": [
+"Only in the red",
+"Only in the black",
+"In all unearthed conductors",
+"No protection required"
+],
+"answer": "In all unearthed conductors",
+"reference": "AS/NZS 3000:2007, Section 7, Clause 7.5.9.1"
+},
+{
+"question": "Lighting circuits in a dwelling that require RCD protection should be distributed across:",
+"options": [
+"At least two RCDs",
+"One single RCD",
+"An RCBO per circuit only",
+"No distribution requirement"
+],
+"answer": "At least two RCDs",
+"reference": "AS/NZS 3000:2007, Section 2, Clause 2.6.2.4 (b) (ii)"
+},
+{
+"question": "A motor stopping device must:",
+"options": [
+"Be capable of automatically reclosing",
+"Remain effective if a fault occurs in a motor-control circuit",
+"Be fitted only on the neutral",
+"Be lockable only"
+],
+"answer": "Remain effective if a fault occurs in a motor-control circuit",
+"reference": "AS/NZS 3000:2007, Section 4, Clause 4.13.1.3"
+},
+{
+"question": "Where is the neutral conductor earthed in an MEN system? (Choose the best answer.)",
+"options": [
+"At the load side of every RCBO",
+"At regular intervals throughout the system",
+"At every socket-outlet",
+"Only at distribution transformers"
+],
+"answer": "At regular intervals throughout the system",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.1.3"
+},
+{
+"question": "When earthing is used for both protective and functional purposes, which requirement applies?",
+"options": [
+"Functional requirement prevails",
+"Protective requirement prevails",
+"Neither prevails",
+"Whichever has lower impedance prevails"
+],
+"answer": "Protective requirement prevails",
+"reference": "AS/NZS 3000:2007, Section 5, Clause 5.2.3"
+},
+{
+"question": "When may conductive conduit be regarded as a protective earthing conductor?",
+"options": [
+"Never",
+"Only if non-metallic",
+"Where the equipment is supplied by conductors within the enclosure and the enclosure provides a reliable earth path",
+"Only if painted green"
+],
+"answer": "Where the equipment is supplied by conductors within the enclosure and the enclosure provides a reliable earth path",
+"reference": "AS/NZS 3000:2007, Clause 5.3.2.3 (a) (i) and (ii)"
+},
+{
+"question": "Using Table C2 of AS/NZS 3000 for load group B(i), 10 × 10 A socket-outlets contribute approximately how many amps to maximum demand for a sinlge phase shop?",
+"options": [
+"8.39 A",
+"26.46 A",
+"33.70 A",
+"40.05 A"
+],
+"answer": "33.70 A",
+"reference": "AS/NZS 3000:2007, Appendix C, Table C2"
+},
+{
+"question": "Using Table C2 load group B(ii), 10 × 10 A socket-outlets contribute approximately how many amps to maximum demand for a single phase hotel?",
+"options": [
+"6.79 A",
+"8.26 A",
+"16.57 A",
+"26.25 A"
+],
+"answer": "8.26 A",
+"reference": "AS/NZS 3000:2007, Appendix C, Table C2"
+},
+{
+"question": "Two 15 A socket-outlets installed in a single phase school, contribute how many amps per AS/NZS 3000?",
+"options": [
+"15.13 A",
+"22.58 A",
+"26.25 A",
+"30.11 A"
+],
+"answer": "26.25 A",
+"reference": "AS/NZS 3000:2007, Appendix C, Table C2 The calculation for 2 outlets of 15A is 15+(15*0.75) = 26.25A"
+},
+{
+"question": "Two 1.5 kW hand-dryers at 230 V with 0.75 diversity contribute approximately:",
+"options": [
+"6.52 A",
+"9.78 A",
+"13.04 A",
+"17.39 A"
+],
+"answer": "9.78 A",
+"reference": "General knowledge within AS/NZS 3000 context (1.5kW = 1500W. 1500W / 230V = 6.52A. 6.52A * 2 = 13.04A. 13.04A * 0.75 = 9.78A)"
+},
+{
+"question": "Two 2 kW instantaneous heaters at 230 V with 0.75 diversity contribute approximately:",
+"options": [
+"8.69 A",
+"13.04 A",
+"17.39 A",
+"23.19 A"
+],
+"answer": "13.04 A",
+"reference": "General knowledge within AS/NZS 3000 context (2kW = 2000W. 2000W / 230V = 8.7A. 8.7A * 2 = 17.4A. 17.4A * 0.75 = 13.05A)"
+},
+{
+"question": "A 6 kW input air conditioner in a single phase domestic installation contributes approximately:",
+"options": [
+"12.4 A",
+"21.3 A",
+"19.6 A",
+"26.09 A"
+],
+"answer": "19.6 A",
+"reference": "AS/NZS 3000:2007, Appendix C, Table C1, Load Group D, (6000W / 230V = 26.09A. Diversity of 0.75 is applied, 26.09 * 0.75 = 19.57A)"
+}
 ]

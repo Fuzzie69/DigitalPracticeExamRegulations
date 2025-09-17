@@ -8,10 +8,24 @@ let flaggedQuestions = new Set();
 let timerInterval;
 const EXAM_DURATION = 180 * 60; // 3 hours in seconds
 const TOTAL_QUESTIONS = 100;
+const STORAGE_KEY = 'regs_exam_start_time';
 
-function shuffleArray(array) {
+function seededRandom(seed) {
+    // Mulberry32 PRNG
+    let t = seed += 0x6D2B79F5;
+    t = Math.imul(t ^ t >>> 15, t | 1);
+    t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+}
+
+function shuffleArray(array, seed = null) {
+    // Fisher-Yates shuffle, optionally seeded
+    let random = Math.random;
+    if (seed !== null) {
+        random = () => seededRandom(seed++);
+    }
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
@@ -23,7 +37,11 @@ async function loadQuestions() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         let allQuestions = await response.json();
-        shuffleArray(allQuestions);
+        // Use a random seed based on current time and Math.random to maximize randomness
+        const now = Date.now();
+        const extra = Math.floor(Math.random() * 1000000);
+        const seed = now ^ extra;
+        shuffleArray(allQuestions, seed);
         questions = allQuestions.slice(0, TOTAL_QUESTIONS);
     } catch (error) {
         console.error("Could not load questions:", error);
@@ -33,6 +51,12 @@ async function loadQuestions() {
 
 export async function init() {
     await loadQuestions();
+    // If exam in progress, restore timer and state
+    const startTime = localStorage.getItem(STORAGE_KEY);
+    if (startTime) {
+        // Optionally, you could restore more state here
+        // For now, just keep the timer persistent
+    }
 }
 
 export function startExam() {
@@ -43,6 +67,10 @@ export function startExam() {
     currentQuestionIndex = 0;
     userAnswers = {};
     flaggedQuestions.clear();
+
+    // Store the start time in localStorage
+    const now = Date.now();
+    localStorage.setItem(STORAGE_KEY, now.toString());
 
     ui.showScreen('exam-screen');
     ui.createProgressBar(questions.length);
@@ -94,16 +122,24 @@ export function toggleFlag() {
     ui.updateProgressBar(questions.length, userAnswers, flaggedQuestions, currentQuestionIndex);
 }
 
+function getTimeLeft() {
+    const startTime = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+    if (!startTime) return EXAM_DURATION;
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    return Math.max(EXAM_DURATION - elapsed, 0);
+}
+
 function startTimer() {
     clearInterval(timerInterval);
-    let timeLeft = EXAM_DURATION;
+    let timeLeft = getTimeLeft();
     ui.updateTimerDisplay(timeLeft);
 
     timerInterval = setInterval(() => {
-        timeLeft--;
+        timeLeft = getTimeLeft();
         ui.updateTimerDisplay(timeLeft);
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
+            // Directly submit the exam, ignoring flagged/incomplete questions
             submitExam();
         }
     }, 1000);
@@ -132,6 +168,7 @@ export function handleSubmitAttempt() {
 
 export function submitExam() {
     clearInterval(timerInterval);
+    localStorage.removeItem(STORAGE_KEY); // Clear timer persistence
     ui.showScreen('results-screen');
     calculateResults();
 }
@@ -148,7 +185,8 @@ function calculateResults() {
             question: question.question,
             userAnswer: userAnswer || 'Not answered',
             correctAnswer: question.answer,
-            isCorrect
+            isCorrect,
+            reference: question.reference // Pass reference to UI
         };
     });
 
@@ -158,5 +196,6 @@ function calculateResults() {
 
 export function restartExam() {
     clearInterval(timerInterval);
+    localStorage.removeItem(STORAGE_KEY); // Clear timer persistence
     ui.showScreen('start-screen');
 }
