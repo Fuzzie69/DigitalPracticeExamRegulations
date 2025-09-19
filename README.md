@@ -36,7 +36,7 @@ This project is a web-based practice exam tool for the Electrician Level 4 Regul
 ## Technical Notes
 
 - **Randomization:** Uses a seeded shuffle to maximize randomness and minimize repeated question sets.
-- **Timer Persistence:** Uses `localStorage` to store the exam start time, so the timer is accurate even after page reloads or browser restarts.
+- **Timer Persistence:** Uses `localStorage` to store the exam start time, so the timer is accurate even after page reloads. Use of cookies implemented to keep timer consistent.
 - **References:** Each question includes a reference to the relevant regulation or standard for further study.
 
 ## Customization
@@ -46,7 +46,7 @@ This project is a web-based practice exam tool for the Electrician Level 4 Regul
 
 ## Version
 
-- v1.01
+- v1.02
 
 ---
 

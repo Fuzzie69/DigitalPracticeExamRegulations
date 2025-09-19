@@ -12,8 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.nextBtn.addEventListener('click', quiz.nextQuestion);
     ui.prevBtn.addEventListener('click', quiz.prevQuestion);
     ui.flagBtn.addEventListener('click', quiz.toggleFlag);
-    ui.submitBtn.addEventListener('click', quiz.handleSubmitAttempt);
-    ui.restartBtn.addEventListener('click', quiz.restartExam);
+    ui.submitBtn.addEventListener('click', () => {
+        // Always allow submit attempt, quiz.js will handle question count logic
+        quiz.handleSubmitAttempt();
+    });
+
+    // Use confirmation for restart
+    ui.setupRestartConfirmation(() => {
+        if (typeof quiz !== 'undefined' && quiz && quiz.restartExam) {
+            quiz.restartExam();
+        } else {
+            console.error("quiz.restartExam is not a function");
+        }
+    });
 
     // Modal listeners
     ui.closeModalBtn.addEventListener('click', () => ui.hideFlagModal());

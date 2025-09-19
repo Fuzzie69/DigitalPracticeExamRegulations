@@ -12,7 +12,7 @@
         <header>
             <img src="logo.png" alt="Logo" id="logo">
             <h1>Electrician Level 4 Regulations Practice Exam</h1>
-            <div style="font-size: 0.9em; color: #888; margin-top: 4px;">v1.01</div>
+            <div style="font-size: 0.9em; color: #888; margin-top: 4px;">v1.02</div>
         </header>
 
         <div id="start-screen" class="screen active">
@@ -28,7 +28,12 @@
             <div id="exam-header">
                 <div id="question-counter"></div>
                 <button id="flag-btn" class="btn flag-btn">⚐ Flag for Review</button>
-                <div id="timer">Time Left: 30:00</div>
+            </div>
+            <div id="timer-bar-container">
+                <div id="timer-bar-bg">
+                    <div id="timer-bar"></div>
+                </div>
+                <div id="timer-label"></div>
             </div>
             <div id="progress-bar"></div>
             <div id="question-container">
@@ -36,9 +41,14 @@
                 <div id="options-container"></div>
             </div>
             <div id="navigation-buttons">
-                <button id="prev-btn" class="btn nav-btn">Previous</button>
-                <button id="next-btn" class="btn nav-btn">Next</button>
+                <div style="display: flex; gap: 10px; margin-top: 40px; justify-content: center;">
+                    <button id="prev-btn" class="btn nav-btn">Previous</button>
+                    <button id="next-btn" class="btn nav-btn">Next</button>
+                </div>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 40px; justify-content: center;">
                 <button id="submit-btn" class="btn submit-btn">Submit Exam</button>
+                <button id="restart-exam-btn" class="btn" style="background-color:#ffc107;color:#333;">Restart Exam</button>
             </div>
         </div>
 

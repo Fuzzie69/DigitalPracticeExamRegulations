@@ -11,9 +11,11 @@ export const nextBtn = document.getElementById('next-btn');
 export const flagBtn = document.getElementById('flag-btn');
 export const submitBtn = document.getElementById('submit-btn');
 export const restartBtn = document.getElementById('restart-btn');
+export const restartExamBtn = document.getElementById('restart-exam-btn');
 
 const questionCounter = document.getElementById('question-counter');
-const timerDisplay = document.getElementById('timer');
+const timerBar = document.getElementById('timer-bar');
+const timerLabel = document.getElementById('timer-label');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 export const progressBar = document.getElementById('progress-bar');
@@ -47,7 +49,7 @@ export function createProgressBar(numQuestions) {
     for (let i = 0; i < numQuestions; i++) {
         const box = document.createElement('div');
         box.className = 'progress-box';
-        box.dataset.index = i;
+        box.dataset.index = i; // Ensure data-index is set
         box.textContent = i + 1;
         progressBar.appendChild(box);
     }
@@ -70,7 +72,7 @@ export function updateProgressBar(numQuestions, answers, flagged, currentIndex) 
     });
 }
 
-export function renderQuestion(question, selectedAnswer, qNumber, qTotal) {
+export function renderQuestion(question, selectedAnswers, qNumber, qTotal) {
     questionText.textContent = question.question;
     optionsContainer.innerHTML = '';
 
@@ -78,18 +80,20 @@ export function renderQuestion(question, selectedAnswer, qNumber, qTotal) {
         const label = document.createElement('label');
         label.className = 'option';
         const input = document.createElement('input');
-        input.type = 'radio';
+        input.type = 'checkbox';
         input.name = 'question' + qNumber;
         input.value = option;
-        
-        if (selectedAnswer === option) {
+
+        if (selectedAnswers && selectedAnswers.includes(option)) {
             input.checked = true;
             label.classList.add('selected');
         }
 
         input.addEventListener('change', () => {
             document.querySelectorAll('.option').forEach(l => l.classList.remove('selected'));
-            label.classList.add('selected');
+            if (input.checked) {
+                label.classList.add('selected');
+            }
             selectAnswer(qNumber - 1, option);
         });
 
@@ -97,7 +101,7 @@ export function renderQuestion(question, selectedAnswer, qNumber, qTotal) {
         label.appendChild(document.createTextNode(option));
         optionsContainer.appendChild(label);
     });
-    
+
     questionCounter.textContent = `Question ${qNumber} of ${qTotal}`;
 }
 
@@ -112,10 +116,25 @@ export function updateFlagButton(isFlagged) {
     }
 }
 
-export function updateTimerDisplay(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    timerDisplay.textContent = `Time Left: ${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+export function updateTimerDisplay(seconds, totalSeconds = 180 * 60) {
+    // totalSeconds should match EXAM_DURATION in quiz.js
+    const percent = Math.max(0, Math.min(1, seconds / totalSeconds));
+    if (timerBar) {
+        timerBar.style.width = (percent * 100) + '%';
+        // Color transition (green to orange to red)
+        if (percent > 0.5) {
+            timerBar.style.background = 'linear-gradient(90deg, #4caf50 0%, #ff9800 80%, #f44336 100%)';
+        } else if (percent > 0.2) {
+            timerBar.style.background = 'linear-gradient(90deg, #ff9800 0%, #f44336 100%)';
+        } else {
+            timerBar.style.background = '#f44336';
+        }
+    }
+    if (timerLabel) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        timerLabel.textContent = `Time Left: ${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+    }
 }
 
 export function showFlaggedQuestionsModal(flaggedDetails) {
@@ -126,7 +145,7 @@ export function showFlaggedQuestionsModal(flaggedDetails) {
         li.textContent = `Question ${index + 1}: ${text.substring(0, 40)}...`;
         li.dataset.questionIndex = index;
         li.addEventListener('click', () => {
-            goToQuestion(index);
+            goToQuestion(index); // Calls quiz.goToQuestion with correct index
             hideFlagModal();
         });
         flaggedQuestionsList.appendChild(li);
@@ -170,4 +189,34 @@ export function showError(message) {
     const appContainer = document.getElementById('app-container');
     appContainer.innerHTML = `<div style="padding: 20px; text-align: center; color: red;"><h2>Error</h2><p>${message}</p></div>`;
 }
+
+export function setupRestartConfirmation(restartExamFn) {
+    if (restartBtn) {
+        restartBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to restart the exam? All your progress will be lost.')) {
+                restartExamFn();
+            }
+        });
+    }
+}
+
+// Always attach the event listener for restartExamBtn
+if (restartExamBtn) {
+    restartExamBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to restart the exam? All your progress will be lost.')) {
+            // Import quiz.js dynamically to avoid circular dependency
+            import('./quiz.js').then(module => {
+                if (module && typeof module.restartExam === 'function') {
+                    module.restartExam();
+                } else {
+                    console.error("restartExam is not a function");
+                }
+            }).catch(error => {
+                console.error("Failed to import quiz.js:", error);
+            });
+        }
+    });
+}
+
+// No changes needed here for the submit button logic
 

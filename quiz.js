@@ -9,6 +9,11 @@ let timerInterval;
 const EXAM_DURATION = 180 * 60; // 3 hours in seconds
 const TOTAL_QUESTIONS = 100;
 const STORAGE_KEY = 'regs_exam_start_time';
+const STATE_KEY = 'regs_exam_state';
+const QUESTIONS_KEY = 'regs_exam_questions';
+
+// New, smaller cookie for the question *plan*, not the whole questions array
+const PLAN_KEY = 'regs_exam_plan';
 
 function seededRandom(seed) {
     // Mulberry32 PRNG
@@ -30,52 +35,222 @@ function shuffleArray(array, seed = null) {
     }
 }
 
+// Cookie helpers
+function setCookie(name, value, hours) {
+    const expires = new Date(Date.now() + hours * 60 * 60 * 1000).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+}
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let c of cookies) {
+        let [k, v] = c.trim().split('=');
+        if (k === name) return decodeURIComponent(v || '');
+    }
+    return null;
+}
+function deleteCookie(name) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+}
+
+// Helpers for saving/loading the question plan
+function saveQuestionPlan(plan) {
+    setCookie(PLAN_KEY, JSON.stringify({ v: 1, ...plan }), EXAM_COOKIE_HOURS);
+}
+function loadQuestionPlan() {
+    const s = getCookie(PLAN_KEY);
+    if (!s) return null;
+    try { return JSON.parse(s); } catch { return null; }
+}
+
+const EXAM_COOKIE_HOURS = 3;
+
+function saveExamState() {
+    const state = {
+        currentQuestionIndex,
+        userAnswers,
+        flaggedQuestions: Array.from(flaggedQuestions)
+    };
+    setCookie(STATE_KEY, JSON.stringify(state), EXAM_COOKIE_HOURS);
+}
+
+function loadExamState() {
+    const stateStr = getCookie(STATE_KEY);
+    if (!stateStr) return null;
+    try {
+        const state = JSON.parse(stateStr);
+        return {
+            currentQuestionIndex: state.currentQuestionIndex || 0,
+            userAnswers: state.userAnswers || {},
+            flaggedQuestions: new Set(state.flaggedQuestions || [])
+        };
+    } catch {
+        return null;
+    }
+}
+
+// Replace localStorage for timer
+function saveExamStartTime(ts) {
+    setCookie(STORAGE_KEY, ts.toString(), EXAM_COOKIE_HOURS);
+}
+function loadExamStartTime() {
+    const val = getCookie(STORAGE_KEY);
+    return val ? parseInt(val, 10) : null;
+}
+
 async function loadQuestions() {
+    // Try to rebuild the questions list deterministically from a tiny plan
+    const plan = loadQuestionPlan();
+
     try {
         const response = await fetch('questions.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        let allQuestions = await response.json();
-        // Use a random seed based on current time and Math.random to maximize randomness
-        const now = Date.now();
-        const extra = Math.floor(Math.random() * 1000000);
-        const seed = now ^ extra;
-        shuffleArray(allQuestions, seed);
+        const allQuestions = await response.json();
+
+        if (allQuestions.length < TOTAL_QUESTIONS) {
+            ui.showError(`Question pool has only ${allQuestions.length} questions. Exam requires exactly ${TOTAL_QUESTIONS}.`);
+            questions = [];
+            return;
+        }
+
+        if (plan) {
+            // 1) Best: if we stored IDs and the dataset still has those IDs, use them
+            if (Array.isArray(plan.selectedIds) && plan.selectedIds.length === TOTAL_QUESTIONS) {
+                const byId = new Map(allQuestions.map(q => [q.id, q]));
+                const rebuilt = plan.selectedIds.map(id => byId.get(id)).filter(Boolean);
+                if (rebuilt.length === TOTAL_QUESTIONS) {
+                    questions = rebuilt;
+                    return;
+                }
+                // IDs missing? fall through to indices/seed
+            }
+
+            // 2) Next best: indices against the same pool length
+            if (
+                Array.isArray(plan.selectedIndices) &&
+                plan.selectedIndices.length === TOTAL_QUESTIONS &&
+                (plan.poolLen == null || plan.poolLen === allQuestions.length) &&
+                plan.selectedIndices.every(i => Number.isInteger(i) && i >= 0 && i < allQuestions.length)
+            ) {
+                questions = plan.selectedIndices.map(i => allQuestions[i]);
+                return;
+            }
+
+            // 3) Last resort: re-shuffle using the saved seed (works if the pool hasn’t changed)
+            if (Number.isInteger(plan.seed)) {
+                const allIdx = Array.from({ length: allQuestions.length }, (_, i) => i);
+                shuffleArray(allIdx, plan.seed);
+                questions = allIdx.slice(0, TOTAL_QUESTIONS).map(i => allQuestions[i]);
+                // Save canonical indices for stability on future reloads this sitting
+                saveQuestionPlan({
+                    seed: plan.seed,
+                    selectedIndices: allIdx.slice(0, TOTAL_QUESTIONS),
+                    selectedIds: questions.every(q => q && (typeof q.id === 'string' || typeof q.id === 'number'))
+                        ? questions.map(q => q.id)
+                        : null,
+                    poolLen: allQuestions.length
+                });
+                return;
+            }
+
+            // No workable plan — require restart to avoid mismatched answers
+            ui.showError("Exam session is invalid or expired. Please restart the exam.");
+            questions = [];
+            return;
+        }
+
+        // No plan — not started yet; load a non-random preview slice for the start screen
+        // (Randomization only occurs in startExam())
         questions = allQuestions.slice(0, TOTAL_QUESTIONS);
+
     } catch (error) {
         console.error("Could not load questions:", error);
         ui.showError("Failed to load exam questions. Please try refreshing the page.");
+        questions = [];
     }
 }
 
 export async function init() {
     await loadQuestions();
-    // If exam in progress, restore timer and state
-    const startTime = localStorage.getItem(STORAGE_KEY);
+    const startTime = loadExamStartTime();
     if (startTime) {
-        // Optionally, you could restore more state here
-        // For now, just keep the timer persistent
+        // Exam in progress, restore state
+        const state = loadExamState();
+        if (state) {
+            currentQuestionIndex = state.currentQuestionIndex;
+            // Deep clone userAnswers to avoid prototype issues
+            userAnswers = Object.assign({}, state.userAnswers);
+            // Ensure flaggedQuestions is a Set
+            flaggedQuestions = new Set(state.flaggedQuestions instanceof Set ? Array.from(state.flaggedQuestions) : state.flaggedQuestions);
+        }
+        ui.showScreen('exam-screen');
+        ui.createProgressBar(questions.length);
+        showQuestion(currentQuestionIndex);
+        startTimer();
     }
 }
 
 export function startExam() {
-    if (questions.length === 0) {
-        ui.showError("No questions loaded. Cannot start the exam.");
-        return;
-    }
-    currentQuestionIndex = 0;
-    userAnswers = {};
-    flaggedQuestions.clear();
+    // Always randomize and save questions when starting a new exam
+    fetch('questions.json')
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+        })
+        .then(allQuestions => {
+            if (allQuestions.length < TOTAL_QUESTIONS) {
+                ui.showError(`Question pool has only ${allQuestions.length} questions. Exam requires exactly ${TOTAL_QUESTIONS}.`);
+                return;
+            }
 
-    // Store the start time in localStorage
-    const now = Date.now();
-    localStorage.setItem(STORAGE_KEY, now.toString());
+            // Deterministic seed for this sitting
+            const now = Date.now();
+            const extra = Math.floor(Math.random() * 1000000);
+            const seed = now ^ extra;
 
-    ui.showScreen('exam-screen');
-    ui.createProgressBar(questions.length);
-    showQuestion(currentQuestionIndex);
-    startTimer();
+            // Shuffle an array of indices deterministically
+            const allIdx = Array.from({ length: allQuestions.length }, (_, i) => i);
+            shuffleArray(allIdx, seed);
+
+            // Pick exactly TOTAL_QUESTIONS indices
+            const selectedIndices = allIdx.slice(0, TOTAL_QUESTIONS);
+
+            // Build the questions array in that order
+            questions = selectedIndices.map(i => allQuestions[i]);
+
+            // If questions have stable IDs, store them too (more robust if the server reorders the JSON)
+            const selectedIds = questions.every(q => q && (typeof q.id === 'string' || typeof q.id === 'number'))
+                ? questions.map(q => q.id)
+                : null;
+
+            // Save only the *plan*, not the bulky questions
+            saveQuestionPlan({
+                seed,
+                selectedIndices,
+                selectedIds,            // may be null if your data has no IDs
+                poolLen: allQuestions.length
+            });
+
+            // Reset runtime state
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            flaggedQuestions.clear();
+
+            // Store the start time in cookie
+            const now2 = Date.now();
+            saveExamStartTime(now2);
+            saveExamState();
+
+            ui.showScreen('exam-screen');
+            ui.createProgressBar(questions.length);
+            showQuestion(currentQuestionIndex);
+            startTimer();
+        })
+        .catch(error => {
+            console.error("Could not load questions:", error);
+            ui.showError("Failed to load exam questions. Please try refreshing the page.");
+        });
 }
 
 function showQuestion(index) {
@@ -89,11 +264,20 @@ function showQuestion(index) {
 
     ui.prevBtn.disabled = index === 0;
     ui.nextBtn.disabled = index === questions.length - 1;
+    saveExamState();
 }
 
 export function selectAnswer(index, answer) {
-    userAnswers[index] = answer;
+    if (!Array.isArray(userAnswers[index])) {
+        userAnswers[index] = [];
+    }
+    if (userAnswers[index].includes(answer)) {
+        userAnswers[index] = userAnswers[index].filter(a => a !== answer);
+    } else {
+        userAnswers[index].push(answer);
+    }
     ui.updateProgressBar(questions.length, userAnswers, flaggedQuestions, currentQuestionIndex);
+    saveExamState();
 }
 
 export function nextQuestion() {
@@ -109,7 +293,11 @@ export function prevQuestion() {
 }
 
 export function goToQuestion(index) {
-    showQuestion(index);
+    // Ensure index is valid and update UI
+    if (typeof index === 'number' && index >= 0 && index < questions.length) {
+        showQuestion(index);
+    }
+    // else ignore invalid index
 }
 
 export function toggleFlag() {
@@ -120,10 +308,11 @@ export function toggleFlag() {
     }
     ui.updateFlagButton(flaggedQuestions.has(currentQuestionIndex));
     ui.updateProgressBar(questions.length, userAnswers, flaggedQuestions, currentQuestionIndex);
+    saveExamState();
 }
 
 function getTimeLeft() {
-    const startTime = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+    const startTime = loadExamStartTime();
     if (!startTime) return EXAM_DURATION;
     const elapsed = Math.floor((Date.now() - startTime) / 1000);
     return Math.max(EXAM_DURATION - elapsed, 0);
@@ -132,11 +321,11 @@ function getTimeLeft() {
 function startTimer() {
     clearInterval(timerInterval);
     let timeLeft = getTimeLeft();
-    ui.updateTimerDisplay(timeLeft);
+    ui.updateTimerDisplay(timeLeft, EXAM_DURATION);
 
     timerInterval = setInterval(() => {
         timeLeft = getTimeLeft();
-        ui.updateTimerDisplay(timeLeft);
+        ui.updateTimerDisplay(timeLeft, EXAM_DURATION);
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             // Directly submit the exam, ignoring flagged/incomplete questions
@@ -156,35 +345,74 @@ export function handleSubmitAttempt() {
     } else {
         const unansweredCount = questions.length - Object.keys(userAnswers).length;
         if (unansweredCount > 0) {
+            // Warn, but allow submission if confirmed
             if (!confirm(`You have ${unansweredCount} unanswered question(s). Are you sure you want to submit?`)) {
                 return;
             }
         } else if (!confirm('Are you sure you want to submit the exam?')) {
             return;
         }
+        // Always call submitExam if confirmed
         submitExam();
     }
 }
 
 export function submitExam() {
     clearInterval(timerInterval);
-    localStorage.removeItem(STORAGE_KEY); // Clear timer persistence
+    // Allow submission if there are questions loaded, but warn if not exactly 100
+    if (!questions || questions.length === 0) {
+        ui.showError(`Cannot submit: No questions loaded.`);
+        return;
+    }
+    if (questions.length !== TOTAL_QUESTIONS) {
+        ui.showError(`Warning: Exam does not have exactly ${TOTAL_QUESTIONS} questions. Results will be shown for ${questions.length} questions.`);
+        // Continue to show results for whatever is loaded
+    }
+    clearExamCookies();
     ui.showScreen('results-screen');
     calculateResults();
+}
+
+// Helper to compare answers (supports both string and array)
+function answersMatch(userAnswer, correctAnswer) {
+    if (Array.isArray(correctAnswer)) {
+        // Multiple correct answers
+        if (!Array.isArray(userAnswer)) return false;
+        if (userAnswer.length !== correctAnswer.length) return false;
+        // Compare arrays order-insensitively
+        const a = [...userAnswer].sort();
+        const b = [...correctAnswer].sort();
+        return a.every((val, idx) => val === b[idx]);
+    } else {
+        // Single correct answer
+        if (Array.isArray(userAnswer)) {
+            // If userAnswer is array, check if it contains only the correct answer
+            return userAnswer.length === 1 && userAnswer[0] === correctAnswer;
+        }
+        return userAnswer === correctAnswer;
+    }
 }
 
 function calculateResults() {
     let correctAnswers = 0;
     const results = questions.map((question, index) => {
         const userAnswer = userAnswers[index];
-        const isCorrect = userAnswer === question.answer;
+        const correctAnswer = question.answer;
+        const isCorrect = answersMatch(userAnswer, correctAnswer);
         if (isCorrect) {
             correctAnswers++;
         }
+        // Format user and correct answers for display
+        const userAnswerDisplay = Array.isArray(userAnswer)
+            ? (userAnswer.length ? userAnswer.join(', ') : 'Not answered')
+            : (userAnswer || 'Not answered');
+        const correctAnswerDisplay = Array.isArray(correctAnswer)
+            ? correctAnswer.join(', ')
+            : correctAnswer;
         return {
             question: question.question,
-            userAnswer: userAnswer || 'Not answered',
-            correctAnswer: question.answer,
+            userAnswer: userAnswerDisplay,
+            correctAnswer: correctAnswerDisplay,
             isCorrect,
             reference: question.reference // Pass reference to UI
         };
@@ -196,6 +424,26 @@ function calculateResults() {
 
 export function restartExam() {
     clearInterval(timerInterval);
-    localStorage.removeItem(STORAGE_KEY); // Clear timer persistence
-    ui.showScreen('start-screen');
+    clearExamCookies();
+    // Clear all state
+    currentQuestionIndex = 0;
+    userAnswers = {};
+    flaggedQuestions.clear();
+    questions = [];
+
+    // Reload questions for a fresh start (will fetch and not randomize, but startExam will randomize)
+    loadQuestions().then(() => {
+        ui.showScreen('start-screen');
+    }).catch(error => {
+        console.error("Failed to reload questions after restart:", error);
+        ui.showError("Failed to reload questions. Please refresh the page.");
+    });
+}
+
+// Add this helper to clear all exam cookies
+function clearExamCookies() {
+    deleteCookie(STORAGE_KEY);
+    deleteCookie(STATE_KEY);
+    deleteCookie(QUESTIONS_KEY);
+    deleteCookie(PLAN_KEY);
 }
